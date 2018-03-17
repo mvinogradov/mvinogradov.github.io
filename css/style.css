@@ -242,7 +242,7 @@ margin-top: 16px;
     margin-top: 20px;
 }
 
-/*.card-panel {
+.card-panel {
     max-width: 500px;
-    min-width: 300px;
+    min-width: 380px;
 }
