@@ -194,3 +194,26 @@ margin-top: 16px;
         padding-left: 0;
       }
     }
+/*Крошки---------------------------------------*/
+.breadcrumb_margin {
+    margin-left: 23px;
+    
+}
+.breadcrumb{
+   color: RGB(114,188,235);   
+}
+.breadcrumb:last-child {
+    color: RGB(37,121,191);
+}
+.breadcrumb:before {
+    color: RGB(114,188,235);
+}
+
+.nav-wrapper_color {
+    background-color: #def3fd; 
+    border: none;
+}
+.no_shadow {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
