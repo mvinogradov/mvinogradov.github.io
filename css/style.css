@@ -244,5 +244,8 @@ margin-top: 16px;
 
 .card-panel {
     min-width: 280px;
-    max-width: 500px;
+    max-width: 450px;
+}
+.panel_margin {
+    margin: 0 auto;
 }
