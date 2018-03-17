@@ -217,3 +217,27 @@ margin-top: 16px;
     box-shadow: none;
     -webkit-box-shadow: none;
 }
+
+/*форма----------------------------------------------*/
+.form__title {
+    color: #0071b8;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.btn_block {
+    display: block;
+    background-color: #2579bf;
+}
+.btn_block:hover {
+    background-color: #2579bf;
+    opacity: 0.9;
+}
+.row_margin_none {
+    margin-bottom: 0px;
+}
+
+.form__button_margin {
+    margin-top: 20px;
+}
