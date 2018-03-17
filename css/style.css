@@ -27,3 +27,80 @@ font-family: "HelveticaNeueCyr";
 }
 
 
+/*Меню---------------------------------------*/
+
+.edoc {
+    background-image: url(../img/edoc.png);
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 9px;
+    margin-right:18px;
+}
+
+.licenz{
+    background-image: url(../img/license.png);
+    width: 20px;
+    height: 26px;
+    float: left;
+    margin-top: 10px;
+    margin-right:23px;
+    margin-left: 4px;
+}
+
+.kass {
+    background-image: url(../img/cashbox.png);
+    width: 28px;
+    height: 29px;
+    float: left;
+    margin-top: 9px;
+    margin-right:19px;
+    margin-left: 3px;
+}
+
+
+.check {
+    background-image: url(../img/bills.png);
+    width: 21px;
+    height: 23px;
+    float: left;
+    margin-top: 9px;
+    margin-right: 25px;
+    margin-left: 5px;
+}
+
+.setting {
+    background-image: url(../img/settings.png);
+    width: 23px;
+    height: 23px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 23px;
+    margin-left: 3px;
+}
+
+.logo {
+  /*  float: left;*/
+    background-image: url(../img/logo_ee_cashbox.svg);
+    height: 56px; 
+    width: 160px;
+}
+
+.side-nav li>a {
+margin-top: 16px;
+    padding-left: 36px;
+}
+
+.side-nav .user-view, .side-nav .userView {
+    margin-bottom: 18px;
+    padding-top: 30px;
+    padding-left: 36px;
+}
+
+
+@media only screen and (max-width : 992px) {
+      
+   .side-nav li>a {
+        padding-left: 36px; 
+    }
+    }
