@@ -26,6 +26,18 @@ font-family: "HelveticaNeueCyr";
     padding: 0;
 }
 
+header {
+    background-color: aqua
+}
+
+body {
+    background-color: #def3fd;
+}
+
+header, main, footer {
+      padding-left: 215px;
+    }
+
 
 /*Меню---------------------------------------*/
 
@@ -95,6 +107,13 @@ margin-top: 16px;
     margin-bottom: 18px;
     padding-top: 30px;
     padding-left: 36px;
+    padding-bottom: 8px;
+}
+
+/*Хэдер---------------------------------------*/
+
+.nav_color {
+    background-color: #0071b8;
 }
 
 
@@ -103,4 +122,7 @@ margin-top: 16px;
    .side-nav li>a {
         padding-left: 36px; 
     }
+    header, main, footer {
+        padding-left: 0;
+      }
     }
