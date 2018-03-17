@@ -94,8 +94,8 @@ header, main, footer {
 .logo {
   /*  float: left;*/
     background-image: url(../img/logo_ee_cashbox.svg);
-    height: 56px; 
-    width: 160px;
+    height: 36px; 
+    width: 144px;
 }
 
 .side-nav li>a {
@@ -105,9 +105,77 @@ margin-top: 16px;
 
 .side-nav .user-view, .side-nav .userView {
     margin-bottom: 18px;
-    padding-top: 30px;
+    padding-top: 38px;
     padding-left: 36px;
-    padding-bottom: 8px;
+    padding-bottom: 20px;
+}
+
+.l-side__string { 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+    padding-left: 36px;
+}
+
+.l-side__string_pad-bot {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.l-side__string_last {
+    padding-top: 150px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.l-side__string-text {
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+
+
+.l-side__string-text_middle {
+    font-size: 14px;
+}
+
+.l-side__string-text_pad-bot {
+    padding-left: 0;
+    padding-bottom: 20px;
+}
+.l-side__link {
+    font-size: 13px;
+    color: #0079bc;
+    padding: 0px !important;
+}
+.l-side__string:hover .without-fill,
+.l-side__string_hovered .without-fill {
+    color: #000;
+    cursor: default;
+}
+
+.vsostave {
+    height: 25px;
+    padding-left: 32px;
+    margin-bottom: 25px;
 }
 
 /*Хэдер---------------------------------------*/
