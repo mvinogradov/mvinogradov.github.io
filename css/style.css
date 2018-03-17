@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@font-face {
+font-family: "HelveticaNeueCyr";
+  src: url("..font/HelveticaNeueCyr-Roman.otf"),
+  url("../font/HelveticaNeueCyr-Roman.otf"), 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+font-family: "HelveticaNeueCyr";
+  src: url("..font/HelveticaNeueCyr-Bold.otf"),
+  url("../font/HelveticaNeueCyr-Bold.otf"), 
+  font-weight: bold;
+  font-style: bold;
+}
+/**/
+
+
+
+/*-------------------------------------------------------------------------------------*/
+
+* {
+    font-family: 'HelveticaNeueCyr','Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
