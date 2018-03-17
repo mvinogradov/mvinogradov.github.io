@@ -24,7 +24,6 @@ font-family: "HelveticaNeueCyr";
     font-family: 'HelveticaNeueCyr','Arial', sans-serif;
     margin: 0;
     padding: 0;
-        margin-top: 1px;
 }
 
 header {
@@ -111,6 +110,7 @@ margin-top: 16px;
     padding-top: 38px;
     padding-left: 36px;
     padding-bottom: 20px;
+     margin-top: 1px;
 }
 
 .l-side__string { 
@@ -197,6 +197,9 @@ margin-top: 16px;
         padding-left: 0;
       }
     }
+.nav_margin {
+    margin-bottom: 1px;
+}
 /*Крошки---------------------------------------*/
 .breadcrumb_margin {
     margin-left: 23px;
