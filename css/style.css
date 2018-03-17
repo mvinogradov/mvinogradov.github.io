@@ -95,7 +95,7 @@ header, main, footer {
   /*  float: left;*/
     background-image: url(../img/logo_ee_cashbox.svg);
     height: 36px; 
-    width: 144px;
+    width: 143px;
 }
 
 .side-nav li>a {
@@ -243,7 +243,6 @@ margin-top: 16px;
 }
 
 .card-panel {
-    width: calc(100% - 60px);
-    min-width: 310px;
+    min-width: 280px;
     max-width: 500px;
 }
