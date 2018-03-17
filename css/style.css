@@ -249,3 +249,10 @@ margin-top: 16px;
 .panel_margin {
     margin: 0 auto;
 }
+.disable_btn {
+    opacity: 0.5;
+}
+.disable_btn>a:hover {
+    cursor: default;
+    background-color: none !important;
+}
