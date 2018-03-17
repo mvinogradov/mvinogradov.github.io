@@ -241,3 +241,8 @@ margin-top: 16px;
 .form__button_margin {
     margin-top: 20px;
 }
+
+/*.card-panel {
+    max-width: 500px;
+    min-width: 300px;
+}
