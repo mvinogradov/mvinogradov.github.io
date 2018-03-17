@@ -28,18 +28,8 @@ $(document).ready(function() {
 // маска для инпута "номер ФН"	
     $("#numb_fn").inputmask("9999 9999 9999 9999");
     
-//открытие меню при клике на menu_btn
-    $(".menu_btn").on("click", function(){
-        $(".bar1, .bar2, .bar3").toggleClass("change")
-        $(".header-bottom__nav").toggleClass("opened")
-    }); 
     
-//открытие админ-пенели при клике на admin_btn
-    $(".admin_btn").on("click", function(){
-        $(".bar1, .bar2, .bar3").toggleClass("change")
-        $(".l-side").toggleClass("show")
-    }); 
-    
+
 // ввод только цыфр в инпуты
     $('input#fns, input#kpp, input#rnm, input#nfn, input#numb_zn').keypress(function(event){
 		var key, keyChar;

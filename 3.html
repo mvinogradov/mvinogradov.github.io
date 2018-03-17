@@ -91,11 +91,12 @@
     </header>
 
     <main>
-        <nav class="no_shadow">
-            <div class="nav-wrapper nav-wrapper_color ">
+        <nav class="no_shadow no_color">
+            <div class="nav-wrapper nav-wrapper_color no_display">
                 <div class="col s12 ">
                     <a href="#!" class="breadcrumb breadcrumb_margin">Авторизация</a>
                     <a href="#!" class="breadcrumb">Выбор сертификата</a>
+                    <a href="#!" class="breadcrumb">Реквизиты</a>
                 </div>
             </div>
         </nav>
@@ -106,46 +107,88 @@
                 <div class="col s12">
                     <div class="card-panel white panel_margin card_panel_text">
                         <div class='row row_margin_none'>
-                            <h1 class="form__title">Выбор сертификата</h1>
+                            <h1 class="form__title">Реквизиты</h1>
 
                         </div>
-    
                         <div class="row row_margin_none">
                             <div class="input-field col s12">
-                                <select>
-      <option value="1">Павлов Николай Геннадьевич (действует до 01.11.2018)</option>
-      <option value="2">Павлов Николай Владимирович (действует до 01.11.2018)</option>
-      <option value="3">Максим Николай Геннадьевич (действует до 01.11.2018)</option>
-    </select>
-                                <label>Выберите сертификат</label>
+                                <input disabled value="Центр технического обслуживания “Авангард”" id="orgname" type="text" class="validate grey lighten-3 input_disable_grey">
+                                <label class="hide-on-small-only" for="orgname">Полное наименование организации (ФИО ИП)</label>
+                                <label class="hide-on-med-and-up" for="orgname">Наименование (ФИО ИП)</label>
                             </div>
                         </div>
-                        <div class="warning-block-position">
+
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12 m6">
+                                <input disabled value="7723378234" id="inn" type="text" class="validate grey lighten-3 input_disable_grey">
+                                <label for="inn">ИНН</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input disabled value="0219312342394" id="ogrn" type="text" class="validate grey lighten-3 input_disable_grey">
+                                <label for="ogrn">ОГРН</label>
+                            </div>
+                        </div>
+
+
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12 m6">
+                                <input id="kpp" type="text" class="validate" minlength="9" maxlength="9">
+                                <label  data-error="должно быть 9 цифр" data-success="верно" for="kpp">КПП</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input id="fns" type="text" class="validate" minlength="4" maxlength="4">
+                                <label data-error="должно быть 4 цифры" data-success="верно" for="fns">Код ФНС</label>
+                            </div>
+                        </div>
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12">
+                                <input disabled value="2CI002249067" id="id_edo" type="text" class="validate grey lighten-3 input_disable_grey">
+                                <label for="id_edo">Идентификатор участника ЭДО</label>
+                            </div>
+                        </div>
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12">
+                                <input disabled value="Павлов Николай Геннадиевич" id="fio" type="text" class="validate grey lighten-3 input_disable_grey">
+                                <label for="fio">ФИО владельца ЭП</label>
+                            </div>
+                        </div>
+
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12 m6">
+                                <input id="phone-numb" type="tel" >
+                                <label for="phone-numb" >Мобильный телефон</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input id="email" type="email" class="validate">
+                                <label for="email" data-error="должен быть знак @" data-success="верно">E-mail</label>
+                            </div>
+                            </div>
+                            <div class="warning-block-position">
                          <div class="card-panel white panel_margin warning-block">
                         <p>Для продолжения работы ваш сертификат должен быть зарегистрирован как сертификат участника электронного документооборота счетов-фактур в&nbsp;электронной форме по&nbsp;ТКС с&nbsp;оператором ЭДО &laquo;Электронный Экспресс&raquo;. Продолжая, вы&nbsp;соглашаетесь на&nbsp;проверку. Мы&nbsp;проверим ваши данные и&nbsp;в&nbsp;случае необходимости зарегистрируем.</p>
                          </div>
-                        </div>
-                        <div class="row">
+                     
+                     
+                         <div class="card-panel white panel_margin warning-block">
+                        <p>Вы&nbsp;уже зарегистрированы как участник ЭДО. Нажмите &laquo;Продолжить&raquo; и&nbsp;мы&nbsp;отправим вам реквизиты доступа на&nbsp;указанные почту и&nbsp;телефон.</p>
+                         </div>
+                         </div>
+                            <div class="row">
                             <div class="col s12">
                                 <a class="waves-effect waves-light btn-large btn_block form__button_margin">Продолжить</a>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col s12">
-                                <a href="#" class="form__links">Забыли пароль?</a>
-                                <a href="#" class="form__links right">Зарегистрироваться</a>
-                            </div>
-                        </div>
-
+                        
                     </div>
                 </div>
- </div>
+            </div>
         </form>
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/libs.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -154,14 +197,12 @@
             });
             $('.collapsible').collapsible();
         })
-
     </script>
     <script>
         $(document).ready(function() {
             $('select').material_select();
         });
-
-    </script>
+    </script>     
 </body>
 
 </html>

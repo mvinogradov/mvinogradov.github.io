@@ -2,15 +2,13 @@
 
 @font-face {
 font-family: "HelveticaNeueCyr";
-  src: url("..font/HelveticaNeueCyr-Roman.otf"),
-  url("../font/HelveticaNeueCyr-Roman.otf"), 
+  src: url("../font/HelveticaNeueCyr-Roman.otf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
 font-family: "HelveticaNeueCyr";
-  src: url("..font/HelveticaNeueCyr-Bold.otf"),
-  url("../font/HelveticaNeueCyr-Bold.otf"), 
+  src: url("../font/HelveticaNeueCyr-Bold.otf");
   font-weight: bold;
   font-style: bold;
 }
@@ -38,9 +36,7 @@ header, main, footer {
       padding-left: 215px;
     }
 
-.row .col {
-    padding: 0px;
-}
+
 /*Меню---------------------------------------*/
 
 .edoc {
@@ -106,7 +102,7 @@ margin-top: 16px;
 }
 
 .side-nav .user-view, .side-nav .userView {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     padding-top: 38px;
     padding-left: 36px;
     padding-bottom: 20px;
@@ -196,9 +192,21 @@ margin-top: 16px;
     header, main, footer {
         padding-left: 0;
       }
+	.breadcrumb_margin {
+		margin-left: 12px;
+	}
     }
 .nav_margin {
     margin-bottom: 1px;
+}
+@media only screen and (max-width : 500px) {
+	.no_display {
+    display: none;
+		
+}	
+	.no_color {
+		background-color: #def3fd;
+	}
 }
 /*Крошки---------------------------------------*/
 .breadcrumb_margin {
@@ -270,28 +278,37 @@ margin-top: 16px;
     cursor: default;
     background-color: none !important;
 }
+.input_disable_grey {
+    border-radius: 5px !important;
+}
+
 
 /*форма текста----------------------------------------------*/
 
 .warning-block-position {
     position: absolute;
-    top: 0;
+    top: 2px;
     right: -290px;
 }
 .warning-block {
     max-width: 207px;
+	margin-bottom: 4px;
    
 }
 @media only screen and (max-width: 992px) {
     .warning-block-position {
         position: relative;
         right: 0;
+			margin-bottom: 2px;
     }
     .warning-block {
         min-width: 100%;
+	
 }
     .card_panel_text {
     left: 0;
     
 }
-}
+    .phone {
+        
+    }
