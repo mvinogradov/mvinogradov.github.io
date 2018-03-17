@@ -95,6 +95,7 @@
             <div class="nav-wrapper nav-wrapper_color ">
                 <div class="col s12 ">
                     <a href="#!" class="breadcrumb breadcrumb_margin">Авторизация</a>
+                        <a href="#!" class="breadcrumb">Выбор сертификата</a>
                 </div>
             </div>
         </nav>
@@ -105,25 +106,23 @@
                 <div class="col s12">
                     <div class="card-panel white panel_margin">
                         <div class='row row_margin_none'>
-                            <h1 class="form__title">Войти в <span class="no_warp">Экспресс Кассу</span></h1>
+                            <h1 class="form__title">Выбор сертификата</span></h1>
 
                         </div>
 
                         <div class="row row_margin_none">
                             <div class="input-field col s12">
-                                <input id="login" type="text" class="validate">
-                                <label for="Login">Логин</label>
-                            </div>
-                        </div>
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12">
-                                <input id="pass" type="password" class="validate">
-                                <label for="pass">Пароль</label>
-                            </div>
+    <select>
+      <option value="1">Павлов Николай Геннадьевич (действует до 01.11.2018)</option>
+      <option value="2">Павлов Николай Владимирович (действует до 01.11.2018)</option>
+      <option value="3">Максим Николай Геннадьевич (действует до 01.11.2018)</option>
+    </select>
+    <label>Выберите сертификат</label>
+  </div>
                         </div>
                          <div class="row">
                             <div class="col s12">
-                               <a class="waves-effect waves-light btn-large btn_block form__button_margin">Войти</a>
+                               <a class="waves-effect waves-light btn-large btn_block form__button_margin">Продолжить</a>
                             </div>
                         </div> 
                          <div class="row">
@@ -156,6 +155,11 @@
         })
 
     </script>
+     <script>
+    $(document).ready(function() {
+    $('select').material_select();
+  });
+           </script>
 </body>
 
 </html>
