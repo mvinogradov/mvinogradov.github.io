@@ -243,6 +243,7 @@ margin-top: 16px;
 }
 
 .card-panel {
+    width: calc(100% - 60px);
+    min-width: 310px;
     max-width: 500px;
-    min-width: 320px;
 }
