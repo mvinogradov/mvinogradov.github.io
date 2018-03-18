@@ -400,6 +400,7 @@ border-color: #0071b8;
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 2px solid #f2f2f2;
+	overflow-x: auto;
 
 }
 .btn_cash_search {
@@ -440,7 +441,7 @@ border-color: #0071b8;
 	min-width: 200px;
 }
 .search_box input {
-	min-width: 145px;
+	width: 145px;
 }
 /*табл----------------------------------------------*/
 .table-box {
