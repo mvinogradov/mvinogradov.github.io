@@ -400,11 +400,10 @@ border-color: #0071b8;
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 2px solid #f2f2f2;
-    min-width: 1012px;
+    min-width: 992px;
 }
 .btn_cash_search {
     background-color: #0071b8;
-	margin-top: 1rem;
 }
 .btn_cash_search:hover {
     background-color: #0071b8;
@@ -461,7 +460,7 @@ border-color: #0071b8;
     flex-direction: column;
     overflow-x: scroll;
     padding-top: 257px;
-	min-width: 1001px;
+	min-width: 992px;
 }
 
 .fixed_row_margin {

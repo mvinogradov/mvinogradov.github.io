@@ -62,71 +62,81 @@
 		</ul>
 		<div class="top-navbar-fixed">
 			<nav class="nav-extended nav_color fixed_nav_width header_nav_h">
-			<div class="nav-wrapper">
-				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul id="nav-mobile" class="right">
-					<li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
-					<li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
-					<li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
-					<li><a href="#" class="header-top__img-right" title="Выход"><i class="material-icons color_ico">exit_to_app</i></a></li>
-				</ul>
-			</div>
-			<div class="nav-content nav_margin nav_top_margin">
-				<span class="header-top__text">Общество с ограниченной ответственностью "Продуктовый магазин"</span>
-			</div>
-		</nav>
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right">
+						<li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Выход"><i class="material-icons color_ico">exit_to_app</i></a></li>
+					</ul>
+				</div>
+				<div class="nav-content nav_margin nav_top_margin">
+					<span class="header-top__text">Общество с ограниченной ответственностью "Продуктовый магазин"</span>
+				</div>
+			</nav>
 
 
-			<div class="search_box row row_margin_none fixed_nav_width fixed_row_margin">
+			<div class="search_box row row_margin_none fixed_nav_width fixed_row_margin ">
 
-				<div class="input-field col s12 xl3">
+				<div class="input-field col s12 l3">
 					<input id="name_cash" type="text">
 					<label type="text" for="name_cash">Название</label>
 				</div>
-				<div class="input-field col s12 xl2">
+				<div class="input-field col s12 l2 show-on-large">
 					<input id="rnm" type="text">
 					<label type="text" for="rnm">РНМ</label>
 				</div>
 
 
-				<div class="input-field col s12 xl2">
+				<div class="input-field col s12 l2">
 					<input id="numb_fn" type="text">
 					<label type="text" for="numb_fn">Номер ФН</label>
 				</div>
 
 
-				<div class="input-field col s12 xl2">
+				<div class="input-field col s12 l2" >
 					<input id="numb_zn" type="text">
 					<label type="text" for="numb_zn">Заводской</label>
 
 				</div>
-				<div class="col s12 xl2">
+				<div class="input-field col s12 xl2">
 					<a class="waves-effect waves-light btn btn_cash_search left">Показать</a>
 				</div>
 
 			</div>
 			<div class="search_box row add_box">
-			
-					<a class="waves-effect waves-light btn green btn_cash_add"><i class="material-icons left add_cash_icon_marg">add</i>Добавить кассу</a>
-			
+
+				<a class="waves-effect waves-light btn green btn_cash_add"><i class="material-icons left add_cash_icon_marg">add</i>Добавить кассу</a>
+
+	<form action="#" class="checkbox-item">
+				<div class="checkbox-item">
 				
- <div class="checkbox-item">
-					<input hidden type="radio" id="test5" />
-					<label for="test5">Все кассы (9)</label>
-	</div>
-				 <div class="checkbox-item">
-					<input hidden type="checkbox" id="test6" />
-					<label for="test6">Проблемные (2)</label>
-	</div>
+						<p>
+							<input name="group1" type="radio" id="test1" />
+							<label for="test1">Все (9)</label>
+						</p>
+				</div>
 				<div class="checkbox-item">
-					<input hidden type="checkbox" id="test7" />
-					<label for="test7">Требующие внимания (1)</label>
-	</div>
+					<p>
+						<input name="group1" type="radio" id="test2" />
+						<label for="test2">Проблемные (9)</label>
+					</p>
+				</div>
 				<div class="checkbox-item">
-					<input hidden type="checkbox" id="test8" />
-					<label for="test8">Работающие (6)</label>
-	</div>
-			
+					<p>
+						<input name="group1" type="radio" id="test3" />
+						<label for="test3">Требующие внимания (1)</label>
+					</p>
+				</div>
+				<div class="checkbox-item">
+					<p>
+						<input name="group1" type="radio" id="test4" />
+						<label for="test4">В работе (6)</label>
+					</p>
+				</div>
+				</form>
+
 			</div>
 
 		</div>
