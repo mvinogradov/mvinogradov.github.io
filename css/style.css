@@ -177,6 +177,11 @@ margin-top: 16px;
     margin-bottom: 25px;
 }
 
+.select_menu {
+	background-color: #0071b8 !important;
+	color: white !important;
+}
+
 /*Хэдер---------------------------------------*/
 
 .nav_color {
@@ -217,16 +222,20 @@ margin-top: 16px;
 .header_nav_h {
 	height: 112px !important;
 }
+.nav_top_margin {
+    top: -12px;
+	margin-left: 20px;
+}
 /*Крошки---------------------------------------*/
 .breadcrumb_margin {
-    margin-left: 23px;
+    margin-left: 20px;
     
 }
 .breadcrumb{
    color: RGB(114,188,235);   
 }
 .breadcrumb:last-child {
-    color: RGB(37,121,191);
+    color: #0071b8;
 }
 .breadcrumb:before {
     color: RGB(114,188,235);
@@ -239,6 +248,9 @@ margin-top: 16px;
 .no_shadow {
     box-shadow: none;
     -webkit-box-shadow: none;
+}
+.tabs .tab a {
+	padding: 0 20px;
 }
 
 /*форма----------------------------------------------*/
@@ -254,10 +266,10 @@ margin-top: 16px;
 
 .btn_block {
     display: block;
-    background-color: #2579bf;
+    background-color: #0071b8;
 }
 .btn_block:hover {
-    background-color: #2579bf;
+    background-color: #0071b8;
     opacity: 0.9;
 }
 .row_margin_none {
