@@ -1,24 +1,14 @@
 $(document).ready(function() {
-    
-    
-//  изменение положения лейбла для инпутов
-    $("body").delegate( "input", "focus blur", function() {
-      var elem = $(this);
-      setTimeout(function() {
-        elem.prev(".form__label").toggleClass("focused active", elem.is(":focus"));
-        elem.toggleClass("active", elem.is(":focus"));
-      }, 0 );
-    });
-    
-    $("input").keyup(function() {
-        if($(this).val() == ""){
-            $(this).prev(".form__label").removeClass("up")
-        }else{
-            $(this).prev(".form__label").addClass("up")        
-        }
-    });
-    
-    
+ 
+	
+//боковая панель 
+	 $('.button-collapse').sideNav({
+      menuWidth: 215, // Default is 300
+    }
+  );
+	
+//селект материал
+	$('select').material_select();
 // маска для инпута "номер телефона"	
     $("#phone-numb").inputmask("+7 (999)-999-99-99");
     
@@ -27,8 +17,7 @@ $(document).ready(function() {
     
 // маска для инпута "номер ФН"	
     $("#numb_fn").inputmask("9999 9999 9999 9999");
-    
-    
+      
 
 // ввод только цыфр в инпуты
     $('input#fns, input#kpp, input#rnm, input#nfn, input#numb_zn').keypress(function(event){
