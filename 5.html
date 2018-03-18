@@ -13,29 +13,23 @@
 </head>
 
 <body>
+  
     <header>
 
-        <nav class="nav-extended nav_color">
+        <nav class="nav-extended nav_color header_nav_h">
             <div class="nav-wrapper">
-                <a href="#" class="header-top__text">Общество с ограниченной ответственностью "Продкутовый магазин"</a>
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right">
-                    <li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
-                    <li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
+                    <li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">refresh</i></a></li>
+                    <li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">account_box</i></a></li>
                     <li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
-                    <li><a href="#" class="header-top__img-right" title="Выход"><i class="material-icons color_ico">exit_to_app</i></a></li>
+                    <li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">exit_to_app</i></a></li>
                 </ul>
             </div>
-            <div class="nav-content">
-                <ul class="tabs tabs-transparent">
-                    <li class="tab"><a class="active" href="#test1">Войти в Экспресс кассу</a></li>
-                    <li class="tab"><a href="#test2">Настроить кассу</a></li>
-                    <li class="tab disabled"><a href="#test3">Как это работает?</a></li>
-                    <li class="tab"><a href="#test4">Оставить заявку</a></li>
-                </ul>
+            <div class="nav-content nav_margin">
+                 <span class="header-top__text">Общество с ограниченной ответственностью "Продкутовый магазин"</span>
             </div>
         </nav>
-
 
 
 
@@ -102,7 +96,7 @@
 
             <div class="row">
                 <div class="col s12">
-                    <div class="card-panel white panel_margin">
+                    <div class="card-panel white panel_margin card_panel_text">
                         <div class='row row_margin_none'>
                             <h1 class="form__title">Пин-код</h1>
 
@@ -120,11 +114,21 @@
                                 <label for="key">Секретный ключ</label>
                             </div>
                         </div>
+                        <div class="warning-block-position">
+                         <div class="card-panel white panel_margin warning-block">
+                        <p>Для подключения кассы подпишите соглашение об&nbsp;обмене электронными документами и&nbsp;договор с&nbsp;ОФД.</p>
+                         </div>
+                         </div>
                          <div class="row">
                             <div class="col s12">
                                <a class="waves-effect waves-light btn-large btn_block form__button_margin">Войти</a>
                             </div>
-                        </div> 
+                         </div> 
+                         <div class="row">
+                            <div class="col s12">
+                               <a class="waves-effect waves-light btn-large btn_block grey lighten-1">Отменить</a>
+                            </div>
+                         </div>
 
                     </div>
                 </div>

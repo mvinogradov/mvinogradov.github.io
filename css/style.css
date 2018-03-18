@@ -214,6 +214,9 @@ margin-top: 16px;
     color: #fff;
 	word-wrap: normal;
 }
+.header_nav_h {
+	height: 112px !important;
+}
 /*Крошки---------------------------------------*/
 .breadcrumb_margin {
     margin-left: 23px;
@@ -305,7 +308,7 @@ margin-top: 16px;
     .warning-block-position {
         position: relative;
         right: 0;
-			margin-bottom: 2px;
+		margin-bottom: 2px;
     }
     .warning-block {
         min-width: 100%;
@@ -315,8 +318,6 @@ margin-top: 16px;
     left: 0;
     
 }
-    .phone {
-        
-    }
+}
 	
 
