@@ -205,6 +205,7 @@ margin-top: 16px;
 	}
 	.fixed_nav_width {
 	width: 100% !important;
+		
 }
     }
 .nav_margin {
@@ -399,7 +400,7 @@ border-color: #0071b8;
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 2px solid #f2f2f2;
-    min-width: 1001px;
+    min-width: 1012px;
 }
 .btn_cash_search {
     background-color: #0071b8;
@@ -429,7 +430,8 @@ border-color: #0071b8;
 
 .btn_cash_add {
     background-color: #00ad62;
-	min-width: 230px
+	min-width: 231px;
+	margin-right: 40px;
 }
 .btn_cash_add:hover {
     background-color: #00ad62;
@@ -437,6 +439,9 @@ border-color: #0071b8;
 }
 .check_w {
 	min-width: 200px;
+}
+.search_box input {
+	min-width: 145px;
 }
 /*табл----------------------------------------------*/
 .table-box {
@@ -455,6 +460,10 @@ border-color: #0071b8;
     -ms-flex-direction: column;
     flex-direction: column;
     overflow-x: scroll;
-    padding-top: 312px;
+    padding-top: 257px;
 	min-width: 1001px;
+}
+
+.fixed_row_margin {
+margin-left: 0px;	
 }
