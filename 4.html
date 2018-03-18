@@ -13,7 +13,9 @@
 </head>
 
 <body>
+
     <header>
+
 
         <nav class="nav-extended nav_color">
             <div class="nav-wrapper">
@@ -25,7 +27,7 @@
                     <li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">exit_to_app</i></a></li>
                 </ul>
             </div>
-            <div class="nav-content">
+            <div class="nav-content nav_margin">
                 <ul class="tabs tabs-transparent">
                     <li class="tab"><a class="active" href="#test1">Войти в Экспресс кассу</a></li>
                     <li class="tab"><a href="#test2">Настроить кассу</a></li>
@@ -89,10 +91,13 @@
     </header>
 
     <main>
-        <nav class="no_shadow">
-            <div class="nav-wrapper nav-wrapper_color ">
+        <nav class="no_shadow no_color">
+            <div class="nav-wrapper nav-wrapper_color no_display">
                 <div class="col s12 ">
                     <a href="#!" class="breadcrumb breadcrumb_margin">Авторизация</a>
+                    <a href="#!" class="breadcrumb">Выбор сертификата</a>
+                    <a href="#!" class="breadcrumb">Реквизиты</a>
+                    <a href="#!" class="breadcrumb">Завершение регистрации</a>
                 </div>
             </div>
         </nav>
@@ -101,49 +106,32 @@
 
             <div class="row">
                 <div class="col s12">
-                    <div class="card-panel white panel_margin">
+                    <div class="card-panel white panel_margin card_panel_text">
                         <div class='row row_margin_none'>
-                            <h1 class="form__title">Войти в <span class="no_warp">Экспресс Кассу</span></h1>
-
-                        </div>
-
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12">
-                                <input id="login" type="text" class="validate">
-                                <label for="Login">Логин</label>
-                            </div>
-                        </div>
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12">
-                                <input id="pass" type="password" class="validate">
-                                <label for="pass">Пароль</label>
-                            </div>
+                            <h1 class="form__title">Завершение регистрации</h1>
                         </div>
                          <div class="row">
                             <div class="col s12">
-                               <a class="waves-effect waves-light btn-large btn_block form__button_margin">Войти</a>
+                            <p class="form__block-text">Вы успешно зарегистрировались в ОФД <span class="no_warp">Экспресс Касса.</span></p>
+                    <p class="form__block-text">Вам на&nbsp;почту и&nbsp;в&nbsp;СМС отправлено извещение о&nbsp;регистрации. Используя полученные данные, настройте кассу и&nbsp;войдите в&nbsp;личный кабинет для оформления договора.</p>
                             </div>
-                        </div> 
-                         <div class="row">
-                         <div class="col s12">
-                <a href="#" class="form__links">Забыли пароль?</a>
-                <a href="#" class="form__links right">Зарегистрироваться</a>
-            </div> 
-        </div>  
-
+                        </div>
+                            <div class="row">
+                            <div class="col s12">
+                                <a class="waves-effect waves-light btn-large btn_block form__button_margin">ОК</a>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-
         </form>
-
     </main>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/libs.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -152,8 +140,12 @@
             });
             $('.collapsible').collapsible();
         })
-
     </script>
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+    </script>     
 </body>
 
 </html>

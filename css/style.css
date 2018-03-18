@@ -208,6 +208,12 @@ margin-top: 16px;
 		background-color: #def3fd;
 	}
 }
+.header-top__text {
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+	word-wrap: normal;
+}
 /*Крошки---------------------------------------*/
 .breadcrumb_margin {
     margin-left: 23px;
@@ -261,7 +267,7 @@ margin-top: 16px;
 
 .card-panel {
     min-width: 280px;
-    max-width: 450px;
+    max-width: 500px;
 }
 .card_panel_text {
         position: relative;
@@ -312,3 +318,5 @@ margin-top: 16px;
     .phone {
         
     }
+	
+
