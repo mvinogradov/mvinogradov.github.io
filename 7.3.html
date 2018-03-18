@@ -13,28 +13,23 @@
 </head>
 
 <body>
+
 	<header>
 
-		<nav class="nav-extended nav_color">
+		<nav class="nav-extended nav_color header_nav_h">
 			<div class="nav-wrapper">
 				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="right">
-					<li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">refresh</i></a></li>
-					<li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">account_box</i></a></li>
+					<li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
+					<li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
 					<li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
-					<li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">exit_to_app</i></a></li>
+					<li><a href="#" class="header-top__img-right" title="Выход"><i class="material-icons color_ico">exit_to_app</i></a></li>
 				</ul>
 			</div>
-			<div class="nav-content">
-				<ul class="tabs tabs-transparent">
-					<li class="tab"><a class="active" href="#test1">Войти в Экспресс кассу</a></li>
-					<li class="tab"><a href="#test2">Настроить кассу</a></li>
-					<li class="tab disabled"><a href="#test3">Как это работает?</a></li>
-					<li class="tab"><a href="#test4">Оставить заявку</a></li>
-				</ul>
+			<div class="nav-content nav_margin nav_top_margin">
+				<span class="header-top__text">Общество с ограниченной ответственностью "Продуктовый магазин"</span>
 			</div>
 		</nav>
-
 
 
 
@@ -51,7 +46,7 @@
 				<div class="divider"></div>
 			</li>
 			<li>
-				<a class="waves-effect menu_height disable_btn disable_btn" href="#!">
+				<a class="waves-effect menu_height select_menu" href="#!">
 					<div class="kass"></div>Кассы</a>
 			</li>
 			<li>
@@ -59,11 +54,11 @@
 					<div class="check"></div>Чеки</a>
 			</li>
 			<li>
-				<a class="waves-effect menu_height disable_btn" href="#!">
+				<a class="waves-effect menu_height" href="#!">
 					<div class="licenz"></div>Лицензии</a>
 			</li>
 			<li>
-				<a class="waves-effect menu_height disable_btn" href="#!">
+				<a class="waves-effect menu_height" href="#!">
 					<div class="edoc"></div>Документы</a>
 			</li>
 			<li>
@@ -89,10 +84,11 @@
 	</header>
 
 	<main>
-		<nav class="no_shadow">
-			<div class="nav-wrapper nav-wrapper_color breadcrumb_padding">
+		<nav class="no_shadow no_color">
+			<div class="nav-wrapper nav-wrapper_color no_display breadcrumb_padding ">
 				<div class="col s12 ">
-					<a href="#!" class="breadcrumb">Авторизация</a>
+					<a href="#!" class="breadcrumb">Кассы</a>
+					<a href="#!" class="breadcrumb">Касса №1 в продовольственном отделе</a>
 				</div>
 			</div>
 		</nav>
@@ -103,32 +99,27 @@
 				<div class="col s12">
 					<div class="card-panel white panel_margin">
 						<div class='row row_margin_none'>
-							<h1 class="form__title">Войти в <span class="no_warp">Экспресс Кассу</span></h1>
-
+							<h1 class="form__title">Проверка регистрации <br>кассы в ФНС</h1>
 						</div>
-
-						<div class="row row_margin_none">
-							<div class="input-field col s12">
-								<input id="login" type="text" class="validate">
-								<label for="Login">Логин</label>
+						<div class='row s9'>
+							<div class="col s2 offset-s5">
+								<div class="preloader-wrapper big active">
+									<div class="spinner-layer spinner-default-color">
+										<div class="circle-clipper left">
+											<div class="circle"></div>
+										</div>
+										<div class="gap-patch">
+											<div class="circle"></div>
+										</div>
+										<div class="circle-clipper right">
+											<div class="circle"></div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="row row_margin_none">
-							<div class="input-field col s12">
-								<input id="pass" type="password" class="validate">
-								<label for="pass">Пароль</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12">
-								<a class="waves-effect waves-light btn-large btn_block form__button_margin">Войти</a>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12">
-								<a href="#" class="form__links">Забыли пароль?</a>
-								<a href="#" class="form__links right">Зарегистрироваться</a>
-							</div>
+							<p class="form__block-text">В&nbsp;случае успешной проверки вас направит на&nbsp;подписание акта о&nbsp;завершении работ. Обычно регистрация кассы занимает около 5&nbsp;минут.</p>
 						</div>
 
 					</div>
