@@ -316,6 +316,12 @@ margin-top: 16px;
 	margin-bottom: 4px;
    
 }
+.warning-block__reg {
+    padding-bottom: 20px;
+}
+.btn_block_cancel {
+    display: block;
+}
 @media only screen and (max-width: 992px) {
     .warning-block-position {
         position: relative;

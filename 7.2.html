@@ -46,7 +46,7 @@
                 <div class="divider"></div>
             </li>
             <li>
-                <a class="waves-effect menu_height disable_btn disable_btn" href="#!">
+                <a class="waves-effect menu_height select_menu" href="#!">
                     <div class="kass"></div>Кассы</a>
             </li>
             <li>
@@ -54,11 +54,11 @@
                     <div class="check"></div>Чеки</a>
             </li>
             <li>
-                <a class="waves-effect menu_height select_menu" href="#!">
+                <a class="waves-effect menu_height" href="#!">
                     <div class="licenz"></div>Лицензии</a>
             </li>
             <li>
-                <a class="waves-effect menu_height disable_btn" href="#!">
+                <a class="waves-effect menu_height" href="#!">
                     <div class="edoc"></div>Документы</a>
             </li>
             <li>
@@ -87,8 +87,8 @@
         <nav class="no_shadow no_color">
             <div class="nav-wrapper nav-wrapper_color no_display breadcrumb_padding ">
                 <div class="col s12 ">
-                   <a href="#!" class="breadcrumb">Лицензии</a>
-                    <a href="#!" class="breadcrumb">Подключение ККТ через пин-код</a>
+                   <a href="#!" class="breadcrumb">Кассы</a>
+                    <a href="#!" class="breadcrumb">Касса №1 в продовольственном отделе</a>
                 </div>
             </div>
         </nav>
@@ -99,27 +99,34 @@
                 <div class="col s12">
                     <div class="card-panel white panel_margin card_panel_text">
                         <div class='row row_margin_none'>
-                            <h1 class="form__title">Пин-код</h1>
+                            <h1 class="form__title">Информация о кассе</h1>
 
                         </div>
 
                         <div class="row row_margin_none">
                             <div class="input-field col s12">
-                                <input id="num_card" type="text">
-                                <label for="num_card">Номер карты</label>
+                              <input id="rnm" type="text" value="1111222233334444">
+                               <label type="text" for="rnm">РНМ</label>
                             </div>
                         </div>
                         <div class="row row_margin_none">
                             <div class="input-field col s12">
-                                <input id="key" type="text">
-                                <label for="key">Секретный ключ</label>
+                              <input id="numb_fn" type="text" value="1111222233334444">
+                               <label type="text" for="numb_fn">Номер ФН</label>
                             </div>
                         </div>
-                        <div class="warning-block-position">
-                         <div class="card-panel white panel_margin warning-block">
-                        <p>Для подключения кассы подпишите соглашение об&nbsp;обмене электронными документами и&nbsp;договор с&nbsp;ОФД.</p>
-                         </div>
-                         </div>
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12">
+                              <input id="numb_zn" type="text" value="1122334455667788">
+                               <label type="text" for="numb_zn">Заводской</label>
+                            </div>
+                        </div>
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12">
+                              <input id="name_cash" type="text" value="Касса №1 в продовольственном отделе">
+                               <label type="text" for="name_cash">Название</label>
+                            </div>
+                        </div>
                          <div class="row">
                             <div class="col s12">
                                <a class="waves-effect waves-light btn-large btn_block form__button_margin">Продолжить</a>
@@ -129,6 +136,19 @@
                             <div class="col s12">
                                <a class="waves-effect waves-light btn-large btn_block grey lighten-1">Отменить</a>
                             </div>
+                         </div>
+                         <div class="warning-block-position">
+                         <div class="card-panel  red lighten-4 panel_margin warning-block ">
+                        <p>Истек срок договора. Обратитесь к&nbsp;менеджеру для продления.</p>
+                         </div>
+                         <div class="card-panel yellow lighten-4 panel_margin warning-block">
+                        <p>Подключение кассы. Ожидайте, для завершения требуется меньше 30&nbsp;минут.</p>
+                         </div>
+                         <div class="card-panel white panel_margin warning-block">
+                        <p class="warning-block__reg">Касса зарегистрирована 15.08.2018 в 13:30.</p>
+                                <p>Не&nbsp;используйте функцию &laquo;Изменить кассу&raquo; при замене фискального накопителя. Она применяется только для изменения ошибочно зарегистрированных данных. При замене&nbsp;ФН отключите кассу и&nbsp;добавьте ее&nbsp;с&nbsp;новым номером&nbsp;ФН.</p>
+                         <a class="waves-effect btn-flat btn_block_cancel center-align">Отключить</a>
+                         </div>
                          </div>
 
                     </div>
@@ -144,7 +164,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-   
+    <script type="text/javascript" src="js/libs.min.js"></script>
+
+    
 </body>
 
 </html>
