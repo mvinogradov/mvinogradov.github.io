@@ -395,29 +395,17 @@ border-color: #0071b8;
 /*кассы добавить----------------------------------------------*/
 .add_box {
 	background-color: white;
+    border-bottom: solid black 2px;
 
 }
-.checkbox-item {
-    margin-right: 30px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
+
 
 .btn_cash_add {
     background-color: #00ad62;
 margin-left: 20px;
 	margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .btn_cash_add:hover {
     background-color: #00ad62;
@@ -426,7 +414,11 @@ margin-left: 20px;
 .check_w {
 	min-width: 200px;
 }
-
+@media only screen and (min-width: 993px) {
+.fix_col_radio {
+    margin-top: 28px;
+}
+}
 /*табл----------------------------------------------*/
 
 .fixed_row_margin {
@@ -434,7 +426,6 @@ margin-left: 0px;
 }
 
 .table-block {
-    min-width: 992px;
     background: #fff;
     display: -webkit-box;
     display: -webkit-flex;
@@ -455,3 +446,17 @@ margin-left: 0px;
     flex-grow: 1;
 	padding-top: 257px;
 }
+@media screen and (max-width: 992px) {
+table {width:100%;}
+thead {display: none;}
+tr:nth-of-type(2n) {background-color: inherit;}
+tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+tr th:first-child {font-weight:bold;font-size:1.3em;}
+tbody td, tbody th {display: block; text-align:center;}
+tbody td, tbody th:before {
+content: attr(data-th);
+display: block;
+text-align:center;
+}
+    
+    
