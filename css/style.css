@@ -43,53 +43,61 @@ header, main, footer {
 /*Меню---------------------------------------*/
 
 .edoc {
-    background-image: url(../img/edoc.png);
-    width: 30px;
-    height: 30px;
+    background-image: url(../img/center.svg);
+    width: 24px;
+    height: 24px;
     float: left;
     margin-top: 10px;
-    margin-right:18px;
+    margin-right:20px;
+    margin-left: 3px;
 }
 
 .licenz{
-    background-image: url(../img/license.png);
-    width: 20px;
-    height: 26px;
+    background-image: url(../img/license.svg);
+   width: 24px;
+    height: 24px;
     float: left;
     margin-top: 15px;
-    margin-right:23px;
-    margin-left: 4px;
+    margin-right:20px;
+    margin-left: 3px;
+   
 }
 
 .kass {
-    background-image: url(../img/cashbox.png);
-    width: 28px;
-    height: 29px;
+    background-image: url(../img/cashbox.svg);
+    width: 24px;
+    height: 24px;
     float: left;
-    margin-top: 12px;
+    margin-top: 10px;
     margin-right:19px;
     margin-left: 3px;
+}
+.kass_wh {
+  background-image: url(../img/cashbox_wh.svg);   
 }
 
 
 .check {
-    background-image: url(../img/bills.png);
-    width: 21px;
-    height: 23px;
+    background-image: url(../img/bill.svg);
+   width: 22px;
+    height: 24px;
     float: left;
-    margin-top: 16px;
-    margin-right: 25px;
-    margin-left: 5px;
+    margin-top: 12px;
+    margin-right: 20px;
+    margin-left: 4px;
 }
 
+
+
 .setting {
-    background-image: url(../img/settings.png);
-    width: 23px;
-    height: 23px;
+    background-image: url(../img/settings.svg);
+   width: 28px;
+    height: 28px;
     float: left;
     margin-top: 16px;
-    margin-right: 23px;
+    margin-right: 20px;
     margin-left: 3px;
+    fill: green;
 }
 
 .logo {
@@ -324,7 +332,7 @@ header, main, footer {
     max-width: 500px;
 }
 .card_panel_text {
-        position: relative;
+     position: relative;
     left: -145px;
     
 }
