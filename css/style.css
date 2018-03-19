@@ -62,6 +62,9 @@ header, main, footer {
     margin-left: 3px;
    
 }
+.licenz_wh {
+  background-image: url(../img/license_wh.svg);   
+}
 
 .kass {
     background-image: url(../img/cashbox.svg);
@@ -238,6 +241,8 @@ header, main, footer {
     font-weight: 600;
     color: #fff;
 	word-wrap: normal;
+    position: relative;
+    top: -15;
 }
 .header_nav_h {
 	height: 112px !important;
