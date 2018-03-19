@@ -207,6 +207,7 @@ margin-top: 16px;
 	width: 100% !important;
 		
 }
+   
     }
 .nav_margin {
     margin-bottom: 1px;
@@ -370,6 +371,12 @@ margin-top: 16px;
     left: 0;
     
 }
+    .search_box {
+        max-height: 993pxpx;
+        margin: 20px 0;
+         display: none;
+    }
+}
 }
 
 .spinner-default-color {
@@ -468,10 +475,6 @@ content: attr(data-th);
 display: block;
 text-align:center;
 }
-     .search_box {
-        max-height: 993pxpx;
-        margin: 20px 0;
-         display: none;
-    }
+     
     
 }
