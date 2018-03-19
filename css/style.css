@@ -47,9 +47,12 @@ header, main, footer {
     width: 24px;
     height: 24px;
     float: left;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-right:20px;
     margin-left: 3px;
+}
+.edoc_wh {
+  background-image: url(../img/center_wh.svg);   
 }
 
 .licenz{
@@ -57,7 +60,7 @@ header, main, footer {
    width: 24px;
     height: 24px;
     float: left;
-    margin-top: 15px;
+    margin-top: 12px;
     margin-right:20px;
     margin-left: 3px;
    
@@ -71,7 +74,7 @@ header, main, footer {
     width: 24px;
     height: 24px;
     float: left;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-right:19px;
     margin-left: 3px;
 }
@@ -90,19 +93,23 @@ header, main, footer {
     margin-left: 4px;
 }
 
-
+.check_wh {
+  background-image: url(../img/bill_wh.svg);   
+}
 
 .setting {
     background-image: url(../img/settings.svg);
-   width: 28px;
-    height: 28px;
+   width: 24px;
+    height: 24px;
     float: left;
-    margin-top: 16px;
-    margin-right: 20px;
+    margin-top: 12px;
+    margin-right: 19px;
     margin-left: 3px;
     fill: green;
 }
-
+.setting_wh {
+  background-image: url(../img/settings_wh.svg);   
+}
 .logo {
   /*  float: left;*/
     background-image: url(../img/logo_ee_cashbox.svg);
@@ -110,11 +117,6 @@ header, main, footer {
     width: 143px;
 }
 
-.side-nav li>a {
-    padding-left: 36px;
-    height: 56px;
-    line-height:56px;
-}
 
 .side-nav .user-view, .side-nav .userView {
     margin-bottom: 16px;
@@ -206,9 +208,6 @@ header, main, footer {
 
 @media only screen and (max-width : 992px) {
       
-   .side-nav li>a {
-        padding-left: 36px; 
-    }
     header, main, footer {
         padding-left: 0;
       }
@@ -241,8 +240,7 @@ header, main, footer {
     font-weight: 600;
     color: #fff;
 	word-wrap: normal;
-    position: relative;
-    top: -15;
+    position: relative ; 
 }
 .header_nav_h {
 	height: 112px !important;
@@ -347,10 +345,18 @@ header, main, footer {
 .disable_btn {
     opacity: 0.5;
 }
-.disable_btn>a:hover {
-    cursor: default;
-    background-color: none !important;
+.disable_btn:hover {
+    cursor: default !important;
+    background-color: white !important;
 }
+.disable_ico {
+    opacity: 0.7;
+}
+.disable_ico:hover {
+    cursor: default !important;
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
 .input_disable_grey {
     border-radius: 5px !important;
 }
@@ -393,6 +399,8 @@ header, main, footer {
         margin: 20px 0;
          display: none;
     }
+	
+	
 }
 
 .spinner-default-color {
@@ -488,15 +496,18 @@ margin-left: 0px;
 .table-block {
      padding-top: 270px;
     }
+.header-top__text {
+	top: -15px;	
+	}	
+	
 }
 
-@media only screen and (max-width : 600px) {
-.table-block {
-     padding-top: 255px;
-    }
-}
+
 
 @media screen and (max-width: 600px) {
+.table-block {
+padding-top: 255px;
+    }
 table {width:100%;}
 thead {display: none;}
 tr:nth-of-type(2n) {background-color: inherit;}
@@ -507,6 +518,7 @@ tbody td, tbody th:before {
 content: attr(data-th);
 display: block;
 text-align:center;
+	
 }
      
     

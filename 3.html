@@ -1,194 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.png" type="image/x-icon">
-    <title>Экспресс касса</title>
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<title>Экспресс касса</title>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+	<header>
+		<nav class="nav-extended nav_color">
+			<div class="nav-wrapper">
+				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+				<ul id="nav-mobile" class="right">
+					<li><a href="#" class="header-top__img-right disable_ico"><i class="material-icons color_ico ">refresh</i></a></li>
+					<li><a href="#" class="header-top__img-right disable_ico"><i class="material-icons color_ico ">account_box</i></a></li>
+					<li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
+					<li><a href="#" class="header-top__img-right disable_ico"><i class="material-icons color_ico ">exit_to_app</i></a></li>
+				</ul>
+			</div>
+			<div class="nav-content nav_margin">
+				<ul class="tabs tabs-transparent">
+					<li class="tab"><a class="active" href="#test1">Войти в Экспресс кассу</a></li>
+					<li class="tab"><a href="#test2">Настроить кассу</a></li>
+					<li class="tab disabled"><a href="#test3">Как это работает?</a></li>
+					<li class="tab"><a href="#test4">Оставить заявку</a></li>
+				</ul>
+			</div>
+		</nav>
+		<ul id="slide-out" class="side-nav fixed ">
+			<li>
+				<div class="user-view">
+					<a href="#!user">
+						<div class="logo"></div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider"></div>
+			</li>
+			<li>
+				<a class="waves-effect menu_height disable_btn disable_btn" href="#!">
+					<div class="kass"></div>Кассы</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height disable_btn" href="#!">
+					<div class="check"></div>Чеки</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height disable_btn" href="#!">
+					<div class="licenz"></div>Лицензии</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height disable_btn" href="#!">
+					<div class="edoc"></div>Документы</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height disable_btn" href="#!">
+					<div class="setting"></div>Настройки</a>
+			</li>
+			<div class="l-side__string l-side__string_last">
+				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+					<span class="without-fill">8 800 333 8888</span>
+				</div>
+				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+					<a class="l-side__link" href="#">Оставить отзыв</a>
+				</div>
 
-    <header>
+			</div>
+			<div>
+				<img class="vsostave" src="img/vsostave.png">
+			</div>
+		</ul>
+	</header>
+	<main>
+		<nav class="no_shadow no_color">
+			<div class="nav-wrapper nav-wrapper_color no_display breadcrumb_padding">
+				<div class="col s12 ">
+					<a href="#!" class="breadcrumb">Авторизация</a>
+					<a href="#!" class="breadcrumb">Выбор сертификата</a>
+					<a href="#!" class="breadcrumb">Реквизиты</a>
+				</div>
+			</div>
+		</nav>
+		<form action="">
+			<div class="row">
+				<div class="col s12">
+					<div class="card-panel white panel_margin card_panel_text">
+						<div class='row row_margin_none'>
+							<h1 class="form__title">Реквизиты</h1>
 
+						</div>
+						<div class="row row_margin_none">
+							<div class="input-field col s12">
+								<input disabled value="Общество с ограниченной ответственностью Продуктовый магазин" id="orgname" type="text" class="validate grey lighten-3 input_disable_grey">
+								<label class="hide-on-small-only" for="orgname">Полное наименование организации (ФИО ИП)</label>
+								<label class="hide-on-med-and-up" for="orgname">Наименование (ФИО ИП)</label>
+							</div>
+						</div>
 
-        <nav class="nav-extended nav_color">
-            <div class="nav-wrapper">
-                <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right">
-                    <li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">refresh</i></a></li>
-                    <li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">account_box</i></a></li>
-                    <li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
-                    <li><a href="#" class="header-top__img-right"><i class="material-icons color_ico disable_btn">exit_to_app</i></a></li>
-                </ul>
-            </div>
-            <div class="nav-content nav_margin">
-                <ul class="tabs tabs-transparent">
-                    <li class="tab"><a class="active" href="#test1">Войти в Экспресс кассу</a></li>
-                    <li class="tab"><a href="#test2">Настроить кассу</a></li>
-                    <li class="tab disabled"><a href="#test3">Как это работает?</a></li>
-                    <li class="tab"><a href="#test4">Оставить заявку</a></li>
-                </ul>
-            </div>
-        </nav>
+						<div class="row row_margin_none">
+							<div class="input-field col s12 m6">
+								<input disabled value="7723378234" id="inn" type="text" class="validate grey lighten-3 input_disable_grey">
+								<label for="inn">ИНН</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input disabled value="0219312342394" id="ogrn" type="text" class="validate grey lighten-3 input_disable_grey">
+								<label for="ogrn">ОГРН</label>
+							</div>
+						</div>
+						<div class="row row_margin_none">
+							<div class="input-field col s12 m6">
+								<input id="kpp" type="text" class="validate" minlength="9" maxlength="9">
+								<label data-error="должно быть 9 цифр" data-success="верно" for="kpp">КПП</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input id="fns" type="text" class="validate" minlength="4" maxlength="4">
+								<label data-error="должно быть 4 цифры" data-success="верно" for="fns">Код ФНС</label>
+							</div>
+						</div>
+						<div class="row row_margin_none">
+							<div class="input-field col s12">
+								<input disabled value="2CI002249067" id="id_edo" type="text" class="validate grey lighten-3 input_disable_grey">
+								<label for="id_edo">Идентификатор участника ЭДО</label>
+							</div>
+						</div>
+						<div class="row row_margin_none">
+							<div class="input-field col s12">
+								<input disabled value="Павлов Николай Геннадиевич" id="fio" type="text" class="validate grey lighten-3 input_disable_grey">
+								<label for="fio">ФИО владельца ЭП</label>
+							</div>
+						</div>
 
-
-
-
-
-        <ul id="slide-out" class="side-nav fixed ">
-            <li>
-                <div class="user-view">
-                    <a href="#!user">
-                        <div class="logo"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="divider"></div>
-            </li>
-            <li>
-                <a class="waves-effect menu_height disable_btn disable_btn" href="#!">
-                    <div class="kass"></div>Кассы</a>
-            </li>
-            <li>
-                <a class="waves-effect menu_height disable_btn" href="#!">
-                    <div class="check"></div>Чеки</a>
-            </li>
-            <li>
-                <a class="waves-effect menu_height disable_btn" href="#!">
-                    <div class="licenz"></div>Лицензии</a>
-            </li>
-            <li>
-                <a class="waves-effect menu_height disable_btn" href="#!">
-                    <div class="edoc"></div>Документы</a>
-            </li>
-            <li>
-                <a class="waves-effect menu_height disable_btn" href="#!">
-                    <div class="setting"></div>Настройки</a>
-            </li>
-            <div class="l-side__string l-side__string_last">
-                <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
-                    <span class="without-fill">8 800 333 8888</span>
-                </div>
-                <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
-                    <a class="l-side__link" href="#">Оставить отзыв</a>
-                </div>
-
-            </div>
-            <div>
-                <img class="vsostave" src="img/vsostave.png">
-            </div>
-        </ul>
-
-
-
-    </header>
-
-    <main>
-        <nav class="no_shadow no_color">
-            <div class="nav-wrapper nav-wrapper_color no_display breadcrumb_padding">
-                <div class="col s12 ">
-                    <a href="#!" class="breadcrumb">Авторизация</a>
-                    <a href="#!" class="breadcrumb">Выбор сертификата</a>
-                    <a href="#!" class="breadcrumb">Реквизиты</a>
-                </div>
-            </div>
-        </nav>
-
-        <form action="">
-
-            <div class="row">
-                <div class="col s12">
-                    <div class="card-panel white panel_margin card_panel_text">
-                        <div class='row row_margin_none'>
-                            <h1 class="form__title">Реквизиты</h1>
-
-                        </div>
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12">
-                                <input disabled value="Общество с ограниченной ответственностью Продуктовый магазин" id="orgname" type="text" class="validate grey lighten-3 input_disable_grey">
-                                <label class="hide-on-small-only" for="orgname">Полное наименование организации (ФИО ИП)</label>
-                                <label class="hide-on-med-and-up" for="orgname">Наименование (ФИО ИП)</label>
-                            </div>
-                        </div>
-
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12 m6">
-                                <input disabled value="7723378234" id="inn" type="text" class="validate grey lighten-3 input_disable_grey">
-                                <label for="inn">ИНН</label>
-                            </div>
-                            <div class="input-field col s12 m6">
-                                <input disabled value="0219312342394" id="ogrn" type="text" class="validate grey lighten-3 input_disable_grey">
-                                <label for="ogrn">ОГРН</label>
-                            </div>
-                        </div>
-
-
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12 m6">
-                                <input id="kpp" type="text" class="validate" minlength="9" maxlength="9">
-                                <label  data-error="должно быть 9 цифр" data-success="верно" for="kpp">КПП</label>
-                            </div>
-                            <div class="input-field col s12 m6">
-                                <input id="fns" type="text" class="validate" minlength="4" maxlength="4">
-                                <label data-error="должно быть 4 цифры" data-success="верно" for="fns">Код ФНС</label>
-                            </div>
-                        </div>
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12">
-                                <input disabled value="2CI002249067" id="id_edo" type="text" class="validate grey lighten-3 input_disable_grey">
-                                <label for="id_edo">Идентификатор участника ЭДО</label>
-                            </div>
-                        </div>
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12">
-                                <input disabled value="Павлов Николай Геннадиевич" id="fio" type="text" class="validate grey lighten-3 input_disable_grey">
-                                <label for="fio">ФИО владельца ЭП</label>
-                            </div>
-                        </div>
-
-                        <div class="row row_margin_none">
-                            <div class="input-field col s12 m6">
-                                <input id="phone-numb" type="tel" >
-                                <label for="phone-numb" >Мобильный телефон</label>
-                            </div>
-                            <div class="input-field col s12 m6">
-                                <input id="email" type="email" class="validate">
-                                <label for="email" data-error="должен быть знак @" data-success="верно">E-mail</label>
-                            </div>
-                            </div>
-                            <div class="warning-block-position">
-                         <div class="card-panel white panel_margin warning-block">
-                        <p>Для продолжения работы ваш сертификат должен быть зарегистрирован как сертификат участника электронного документооборота счетов-фактур в&nbsp;электронной форме по&nbsp;ТКС с&nbsp;оператором ЭДО &laquo;Электронный Экспресс&raquo;. Продолжая, вы&nbsp;соглашаетесь на&nbsp;проверку. Мы&nbsp;проверим ваши данные и&nbsp;в&nbsp;случае необходимости зарегистрируем.</p>
-                         </div>
-                     
-                     
-                         <div class="card-panel white panel_margin warning-block">
-                        <p>Вы&nbsp;уже зарегистрированы как участник ЭДО. Нажмите &laquo;Продолжить&raquo; и&nbsp;мы&nbsp;отправим вам реквизиты доступа на&nbsp;указанные почту и&nbsp;телефон.</p>
-                         </div>
-                         </div>
-                            <div class="row">
-                            <div class="col s12">
-                                <a class="waves-effect waves-light btn-large btn_block form__button_margin">Продолжить</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </form>
-    </main>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/libs.min.js"></script>
+						<div class="row row_margin_none">
+							<div class="input-field col s12 m6">
+								<input id="phone-numb" type="tel">
+								<label for="phone-numb">Мобильный телефон</label>
+							</div>
+							<div class="input-field col s12 m6">
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="должен быть знак @" data-success="верно">E-mail</label>
+							</div>
+						</div>
+						<div class="warning-block-position">
+							<div class="card-panel white panel_margin warning-block">
+								<p>Для продолжения работы ваш сертификат должен быть зарегистрирован как сертификат участника электронного документооборота счетов-фактур в&nbsp;электронной форме по&nbsp;ТКС с&nbsp;оператором ЭДО &laquo;Электронный Экспресс&raquo;. Продолжая, вы&nbsp;соглашаетесь на&nbsp;проверку. Мы&nbsp;проверим ваши данные и&nbsp;в&nbsp;случае необходимости зарегистрируем.</p>
+							</div>
+							<div class="card-panel white panel_margin warning-block">
+								<p>Вы&nbsp;уже зарегистрированы как участник ЭДО. Нажмите &laquo;Продолжить&raquo; и&nbsp;мы&nbsp;отправим вам реквизиты доступа на&nbsp;указанные почту и&nbsp;телефон.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col s12">
+								<a class="waves-effect waves-light btn-large btn_block form__button_margin">Продолжить</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/libs.min.js"></script>
 
 </body>
 
