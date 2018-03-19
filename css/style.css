@@ -395,7 +395,7 @@ border-color: #0071b8;
 /*кассы добавить----------------------------------------------*/
 .add_box {
 	background-color: white;
-    border-bottom: solid black 2px;
+    border-bottom: solid #f2f2f2 2px;
 
 }
 
@@ -414,11 +414,21 @@ margin-left: 20px;
 .check_w {
 	min-width: 200px;
 }
-@media only screen and (min-width: 993px) {
+
+    
+ @media only screen and (max-width: 1200px) {
+.fix_col_radio { 
+    margin-top: 10px !important;
+}   
+}
+  @media only screen and (min-width: 1200px) {
 .fix_col_radio {
-    margin-top: 28px;
+    margin-top: 
+        28px !important;
+     width: auto !important;
+} 
 }
-}
+     
 /*табл----------------------------------------------*/
 
 .fixed_row_margin {
@@ -444,9 +454,9 @@ margin-left: 0px;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-	padding-top: 257px;
+	padding-top: 271px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 600px) {
 table {width:100%;}
 thead {display: none;}
 tr:nth-of-type(2n) {background-color: inherit;}
@@ -458,5 +468,10 @@ content: attr(data-th);
 display: block;
 text-align:center;
 }
+     .search_box {
+        max-height: 993pxpx;
+        margin: 20px 0;
+         display: none;
+    }
     
-    
+}
