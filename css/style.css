@@ -215,6 +215,11 @@ footer {
 	padding-top: 350px;
 }
 }
+@media only screen and (min-height: 1080px) {
+.l-side__string_last {
+	padding-top: 500px;
+}
+}
 /*Хэдер---------------------------------------*/
 
 .nav_color {
