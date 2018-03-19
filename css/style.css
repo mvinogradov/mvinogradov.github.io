@@ -205,12 +205,12 @@ footer {
 	color: white !important;
 }
 
-@media only screen and (max-height: 768px) {
+@media only screen and (max-height: 800px) {
 .l-side__string_last {
 	padding-top: 150px;
 }
 }
-@media only screen and (min-height: 768px) {
+@media only screen and (min-height: 800px) {
 .l-side__string_last {
 	padding-top: 350px;
 }
