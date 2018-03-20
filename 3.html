@@ -70,10 +70,9 @@
 				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
 					<a class="l-side__link" href="#">Оставить отзыв</a>
 				</div>
-
-			</div>
-			<div>
+                <div>
 				<img class="vsostave" src="img/vsostave.png">
+			</div>    
 			</div>
 		</ul>
 	</header>
@@ -115,12 +114,12 @@
 						</div>
 						<div class="row row_margin_none">
 							<div class="input-field col s12 m6">
-								<input id="kpp" type="text" class="validate" minlength="9" maxlength="9">
-								<label data-error="должно быть 9 цифр" data-success="верно" for="kpp">КПП</label>
+								<input required id="kpp" type="text" class="validate" minlength="9" maxlength="9">
+								<label data-error="должно быть 9 цифр" for="kpp">КПП</label>
 							</div>
 							<div class="input-field col s12 m6">
-								<input id="fns" type="text" class="validate" minlength="4" maxlength="4">
-								<label data-error="должно быть 4 цифры" data-success="верно" for="fns">Код ФНС</label>
+								<input required id="fns" type="text" class="validate" minlength="4" maxlength="4">
+								<label data-error="должно быть 4 цифры" for="fns">Код ФНС</label>
 							</div>
 						</div>
 						<div class="row row_margin_none">
@@ -138,12 +137,12 @@
 
 						<div class="row row_margin_none">
 							<div class="input-field col s12 m6">
-								<input id="phone-numb" type="tel">
+								<input required id="phone-numb" type="text">
 								<label for="phone-numb">Мобильный телефон</label>
 							</div>
 							<div class="input-field col s12 m6">
-								<input id="email" type="email" class="validate">
-								<label for="email" data-error="должен быть знак @" data-success="верно">E-mail</label>
+								<input required id="email" type="email" class="validate">
+								<label for="email" data-error="Не корректный E-mail">E-mail</label>
 							</div>
 						</div>
 						<div class="warning-block-position">
