@@ -173,6 +173,9 @@ footer {
 	-webkit-align-items: flex-start;
 	-ms-flex-align: start;
 	align-items: flex-start;
+    position: fixed;
+    bottom: 0px;
+    padding-bottom: 40px;
 }
 
 .l-side__string-text {
@@ -203,8 +206,6 @@ footer {
 
 .vsostave {
 	height: 25px;
-	padding-left: 32px;
-	margin-bottom: 25px;
 }
 
 .select_menu {
@@ -212,21 +213,12 @@ footer {
 	color: white !important;
 }
 
-@media only screen and (max-height: 800px) {
+@media only screen and (max-height: 500px) {
 .l-side__string_last {
-	padding-top: 150px;
+	display: none;
 }
 }
-@media only screen and (min-height: 800px) {
-.l-side__string_last {
-	padding-top: 350px;
-}
-}
-@media only screen and (min-height: 1080px) {
-.l-side__string_last {
-	padding-top: 500px;
-}
-}
+
 /*Хэдер---------------------------------------*/
 
 .nav_color {
