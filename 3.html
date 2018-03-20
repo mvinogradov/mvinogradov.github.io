@@ -97,7 +97,7 @@
 						</div>
 						<div class="row row_margin_none">
 							<div class="input-field col s12">
-								<input disabled value="Общество с ограниченной ответственностью Продуктовый магазин" id="orgname" type="text" class="validate grey lighten-3 input_disable_grey">
+								<input disabled value="Общество с ограниченной ответственностью Продуктовый магазин" id="orgname" type="text" class="validate ">
 								<label class="hide-on-small-only" for="orgname">Полное наименование организации (ФИО ИП)</label>
 								<label class="hide-on-med-and-up" for="orgname">Наименование (ФИО ИП)</label>
 							</div>
@@ -105,11 +105,11 @@
 
 						<div class="row row_margin_none">
 							<div class="input-field col s12 m6">
-								<input disabled value="7723378234" id="inn" type="text" class="validate grey lighten-3 input_disable_grey">
+								<input disabled value="7723378234" id="inn" type="text" class="validate ">
 								<label for="inn">ИНН</label>
 							</div>
 							<div class="input-field col s12 m6">
-								<input disabled value="0219312342394" id="ogrn" type="text" class="validate grey lighten-3 input_disable_grey">
+								<input disabled value="0219312342394" id="ogrn" type="text" class="validate ">
 								<label for="ogrn">ОГРН</label>
 							</div>
 						</div>
@@ -125,13 +125,13 @@
 						</div>
 						<div class="row row_margin_none">
 							<div class="input-field col s12">
-								<input disabled value="2CI002249067" id="id_edo" type="text" class="validate grey lighten-3 input_disable_grey">
+								<input disabled value="2CI002249067" id="id_edo" type="text" class="validate ">
 								<label for="id_edo">Идентификатор участника ЭДО</label>
 							</div>
 						</div>
 						<div class="row row_margin_none">
 							<div class="input-field col s12">
-								<input disabled value="Павлов Николай Геннадиевич" id="fio" type="text" class="validate grey lighten-3 input_disable_grey">
+								<input disabled value="Павлов Николай Геннадиевич" id="fio" type="text" class="validate ">
 								<label for="fio">ФИО владельца ЭП</label>
 							</div>
 						</div>
@@ -168,7 +168,16 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/libs.min.js"></script>
+ 
+    <script>
+$(document).ready(function($){
+    
+// маска для инпута "номер телефона"	
+    $("#phone-numb").inputmask("+7 (999)-999-99-99");
+});
+</script>
 
+    
 </body>
 
 </html>

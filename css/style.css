@@ -88,6 +88,8 @@ footer {
 	background-image: url(../img/cashbox_wh.svg);
 }
 
+
+
 .check {
 	background-image: url(../img/bill.svg);
 	width: 22px;
@@ -100,6 +102,11 @@ footer {
 
 .check_wh {
 	background-image: url(../img/bill_wh.svg);
+}
+
+.check_size {
+	width: 22px;
+	height: 24px;
 }
 
 .setting {

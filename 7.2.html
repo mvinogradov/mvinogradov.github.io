@@ -150,7 +150,18 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/libs.min.js"></script>
+<script>
 
+$(document).ready(function($){
+    
+// маска для инпута "РНМ"	
+    $("#rnm").inputmask("9999 9999 9999 9999");
+    
+// маска для инпута "номер ФН"	
+    $("#numb_fn").inputmask("9999 9999 9999 9999");
+});
+    
+</script>
 
 </body>
 

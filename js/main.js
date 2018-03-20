@@ -9,15 +9,6 @@ $(document).ready(function() {
 	
 //селект материал
 	$('select').material_select();
-// маска для инпута "номер телефона"	
-    $("#phone-numb").inputmask("+7 (999)-999-99-99");
-    
-// маска для инпута "РНМ"	
-    $("#rnm").inputmask("9999 9999 9999 9999");
-    
-// маска для инпута "номер ФН"	
-    $("#numb_fn").inputmask("9999 9999 9999 9999");
-      
 
 // ввод только цыфр в инпуты
     $('input#fns, input#kpp, input#rnm, input#nfn, input#numb_zn').keypress(function(event){
