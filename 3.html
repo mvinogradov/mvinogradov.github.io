@@ -137,12 +137,12 @@
 
 						<div class="row row_margin_none">
 							<div class="input-field col s12 m6">
-								<input required id="phone-numb" type="text" class="validate">
-								<label for="phone-numb">Мобильный телефон</label>
+								<input required id="phone-numb" type="tel" class="validate">
+								<label for="phone-numb" data-error="Некорректный номер телефона">Мобильный телефон</label>
 							</div>
 							<div class="input-field col s12 m6">
 								<input required id="email" type="email" class="validate">
-								<label for="email" data-error="Не корректный E-mail">E-mail</label>
+								<label for="email" data-error="Некорректный E-mail">E-mail</label>
 							</div>
 						</div>
 						<div class="warning-block-position">
@@ -172,8 +172,11 @@
 $(document).ready(function($){
     
 // маска для инпута "номер телефона"	
-    $("#phone-numb").inputmask("+7 (999)-999-99-99");
+    $("#phone-numb").inputmask("+7 (999)-999-99-99",{ showMaskOnHover: false, "onincomplete": function(){ $(this).addClass('invalid'); $(this).removeClass('valid'); }, "oncomplete": function(){ $(this).addClass('valid'); $(this).removeClass('invalid'); } });
 });
+		
+
+		
 </script>
 
     
