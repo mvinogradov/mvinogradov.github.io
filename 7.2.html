@@ -95,19 +95,19 @@
 
 						<div class="row row_margin_none">
 							<div class="input-field col s12">
-								<input id="rnm" type="text" value="1111222233334444" class="validate" minlength="19" maxlength="19">
-								<label type="text" for="rnm">РНМ</label>
+								<input required id="rnm" type="text" value="1111222233334444" class="validate" >
+								<label data-error="РНМ должен содержать 16 цифр" type="text" for="rnm">РНМ</label>
 							</div>
 						</div>
 						<div class="row row_margin_none">
 							<div class="input-field col s12">
-								<input id="numb_fn" type="text" value="1111222233334444" class="validate" minlength="19" maxlength="19">
-								<label type="text" for="numb_fn">Номер ФН</label>
+								<input required id="numb_fn" type="text" value="1111222233334444" class="validate">
+								<label data-error="ФН должен содержать 16 цифр" type="text" for="numb_fn">Номер ФН</label>
 							</div>
 						</div>
 						<div class="row row_margin_none">
 							<div class="input-field col s12">
-								<input id="numb_zn" type="text" value="1122334455667788" class="validate">
+								<input required id="numb_zn" type="text" value="1122334455667788" class="validate">
 								<label type="text" for="numb_zn">Заводской</label>
 							</div>
 						</div>
@@ -149,17 +149,18 @@
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+	
 <script>
-
 $(document).ready(function($){
     
-// маска для инпута "РНМ"	
-    $("#rnm").inputmask("9999 9999 9999 9999");
-    
-// маска для инпута "номер ФН"	
-    $("#numb_fn").inputmask("9999 9999 9999 9999");
+// маска для инпута "РНМ"		
+    $("#rnm").inputmask("9999 9999 9999 9999",{ showMaskOnHover: false, "onincomplete": function(){ $(this).addClass('invalid'); $(this).removeClass('valid'); }, "oncomplete": function(){ $(this).addClass('valid'); $(this).removeClass('invalid'); } });
+// маска для инпута "номер ФН"		
+	 $("#numb_fn").inputmask("9999 9999 9999 9999",{ showMaskOnHover: false, "onincomplete": function(){ $(this).addClass('invalid'); $(this).removeClass('valid'); }, "oncomplete": function(){ $(this).addClass('valid'); $(this).removeClass('invalid'); } });
 });
-    
+		
+
+		
 </script>
 
 </body>

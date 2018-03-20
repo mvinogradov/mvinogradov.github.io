@@ -129,6 +129,29 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+  
+  var themeColor ;
+
+
+$(document).ready(function(){
+
+    $("button").click(function(){
+      var themeColor = "#0071b8";
+      $(".dropdown-content>li>a").css("color", themeColor);
+      
+      // Update Theme Color
+       if (typeof(Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("themeColor", themeColor);
+
+       } else {
+      Materialize.toast("Sorry, your browser does not support Web Storage...", 4000) 
+       }
+
+    });
+});
+</script>
 
 </body>
 

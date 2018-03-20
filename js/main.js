@@ -6,10 +6,38 @@ $(document).ready(function() {
       menuWidth: 215, // Default is 300
     }
   );
-	
 //селект материал
-	$('select').material_select();
+	
+  
+  var themeColor ;
 
+themeColor = 'blue';
+   
+ 
+    $("button").click(function(){
+      var themeColor = getRandomColor();
+      $(".nav-wrapper").css("background-color", themeColor);
+      $(".secondary-content>.material-icons").css("color", themeColor);
+      $(".btn").css("background-color", themeColor);
+      $(".page-footer").css("background-color", themeColor);
+      $(".input-field").css("color", themeColor);
+      $(".input-field>.material-icons").css("color", themeColor);
+      $(".input-field>label").css("color", themeColor);
+      $(".btn-floating").css("background-color", themeColor);
+      $(".dropdown-content>li>a").css("color", themeColor);
+      
+      // Update Theme Color
+       if (typeof(Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("themeColor", themeColor);
+
+       } else {
+      Materialize.toast("Sorry, your browser does not support Web Storage...", 4000) 
+       }
+
+    });
+	
+	$('select').material_select();
 // ввод только цыфр в инпуты
     $('input#fns, input#kpp, input#rnm, input#nfn, input#numb_zn').keypress(function(event){
 		var key, keyChar;
