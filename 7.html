@@ -75,21 +75,21 @@
 			<div class="row search_box row_margin_none">
 
 				<div class="input-field col s2">
-					<input id="name_cash" type="text">
+					<input id="name_cash" type="text" class="validate">
 					<label type="text" for="name_cash">Название</label>
 				</div>
-				<div class="input-field col s2">
-					<input id="rnm" type="text">
+				<div class="input-field col s2 ">
+					<input id="rnm" type="text" class="validate">
 					<label type="text" for="rnm">РНМ</label>
 				</div>
 
 
 				<div class="input-field col s2">
-					<input id="numb_fn" type="text">
+					<input id="numb_fn" type="text" class="validate" minlength="19" maxlength="19">
 					<label type="text" for="numb_fn">Номер ФН</label>
 				</div>
 				<div class="input-field col s2">
-					<input id="numb_zn" type="text">
+					<input id="numb_zn" type="text" class="validate">
 					<label type="text" for="numb_zn">Заводской</label>
 				</div>
 				<a class="waves-effect waves-light btn btn_cash_search left">Показать</a>
@@ -270,8 +270,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/libs.min.js"></script>
-
+	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
     <script>
 
 $(document).ready(function($){

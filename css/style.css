@@ -631,22 +631,42 @@ footer {
    
 
  /* label focus color */
-   .input-field input[type=tel]:focus + label {
+   .input-field input[type=email]:focus + label {
      color: #0071b8 !important;
    }
    /* label underline focus color */
-   .input-field input[type=tel]:focus {
+   .input-field input[type=email]:focus {
      border-bottom: 1px solid #0071b8 !important;
      box-shadow: 0 1px 0 0 #0071b8 !important;
    }
 /* label underline focus color */
-   .input_line_color input[type=tel] {
+   .input_line_color input[type=email] {
      border-bottom: 1px solid #0071b8 !important;
      box-shadow: 0 1px 0 0 #0071b8 !important;
    }
    /* valid color */
-   .input-field input[type=tel].valid {
+   .input-field input[type=email].valid {
      border-bottom: 1px solid #00ADEC !important;
      box-shadow: 0 1px 0 0 #00ADEC !important;
    }
    
+
+/* label focus color */
+   .input-field input[type=password]:focus + label {
+     color: #0071b8 !important;
+   }
+   /* label underline focus color */
+   .input-field input[type=password]:focus {
+     border-bottom: 1px solid #0071b8 !important;
+     box-shadow: 0 1px 0 0 #0071b8 !important;
+   }
+/* label underline focus color */
+   .input_line_color input[type=password] {
+     border-bottom: 1px solid #0071b8 !important;
+     box-shadow: 0 1px 0 0 #0071b8 !important;
+   }
+   /* valid color */
+   .input-field input[type=password].valid {
+     border-bottom: 1px solid #00ADEC !important;
+     box-shadow: 0 1px 0 0 #00ADEC !important;
+   }
