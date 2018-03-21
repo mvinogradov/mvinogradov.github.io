@@ -469,11 +469,17 @@ footer {
 }
 
 .btn_cash_add {
-    background-color: #00ad62;
+    background-color: #00ad62 !important;
     margin-left: 20px;
     margin-right: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+[type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
+    background-color: #00ad62 !important;
+    border: 2px solid #00ad62 !important;
+
 }
 
 .btn_cash_add:hover {
