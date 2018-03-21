@@ -583,6 +583,10 @@ footer {
 	border-radius: 50%
 }
 
+.circle_padding {
+    padding-left: 20px;
+}
+
 .circle_red {
 	background: #fc4846;
 }
