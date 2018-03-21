@@ -132,7 +132,7 @@ footer {
 
 .side-nav .user-view,
 .side-nav .userView {
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     padding-top: 38px;
     padding-left: 36px;
     padding-bottom: 20px;
@@ -195,6 +195,7 @@ footer {
     font-size: 13px;
     color: #0079bc;
     padding: 0px !important;
+    text-decoration: underline;
 }
 
 .l-side__string:hover .without-fill,
