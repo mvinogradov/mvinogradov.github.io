@@ -398,7 +398,18 @@ footer {
     border-radius: 5px !important;
 }
 
+.csp {
+    position: absolute;
+    top: 175px;
+    left: 35px;
+    color: #828282;
+    font-size: 12px;
+}
 
+.crypto {
+    text-decoration: none;
+    color: #E44143;
+}
 /*форма текста----------------------------------------------*/
 
 .warning-block-position {
