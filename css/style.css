@@ -460,6 +460,8 @@ footer {
 .btn_cash_search {
     background-color: #0071b8 !important;
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .btn_cash_search:hover {
@@ -755,4 +757,41 @@ footer {
 .dropdown-content li > a,
 .dropdown-content li > span {
     color: #0071b8 !important;
+}
+
+/* Датапикер */
+
+.picker__weekday-display { background-color: #0071b8;}
+/* Body - Today info */
+.picker__date-display { background-color: #0071b8; padding-bottom: 5px; }
+/* Buttons of actions */
+.picker__nav--prev:hover { background-color: RGB(15,116,189,0.4); }
+.picker__nav--next:hover { background-color: RGB(15,116,189,0.4); }
+.picker__nav--prev:before {
+  border-left: 0;
+  border-right: 0.75em solid #0071b8;
+}
+.picker__nav--next:before {
+  border-right: 0;
+  border-left: 0.75em solid #0071b8;
+}
+.picker__today { color: #0071b8; }
+.picker__clear { color: #A7A9AC; }
+.picker__close { color: #0071b8; }
+.btn-flat.picker__today:active { background-color: #A7A9AC; }
+.btn-flat.picker__close:active { background-color: #A7A9AC; }
+.btn-flat.picker__clear:active { background-color: #A7A9AC; }
+/* Select months of the year */
+/* Every month of the year except: today */
+.picker__day { /* If you want to customize */ }
+.picker__day:hover { /* If you want to customize */ }
+.picker__day.picker__day--infocus.picker__day--selected.picker__day--highlighted { background-color:#0071b8; }
+/* Today */
+.picker__day.picker__day--infocus.picker__day--today.picker__day--selected.picker__day--highlighted { background-color: RGB(0,173,236); }
+.picker__day.picker__day--today 
+{ color: RGB(0,173,236);
+    font-weight: 700; }
+  
+.picker__day.picker__day--infocus.picker__day--selected.picker__day--highlighted {
+    background-color: #0071b8;
 }

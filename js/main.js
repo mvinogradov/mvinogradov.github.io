@@ -6,37 +6,11 @@ $(document).ready(function() {
       menuWidth: 215, // Default is 300
     }
   );
+    
+    $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
 //селект материал
-	
-  
-  var themeColor ;
-
-themeColor = 'blue';
-   
- 
-    $("button").click(function(){
-      var themeColor = getRandomColor();
-      $(".nav-wrapper").css("background-color", themeColor);
-      $(".secondary-content>.material-icons").css("color", themeColor);
-      $(".btn").css("background-color", themeColor);
-      $(".page-footer").css("background-color", themeColor);
-      $(".input-field").css("color", themeColor);
-      $(".input-field>.material-icons").css("color", themeColor);
-      $(".input-field>label").css("color", themeColor);
-      $(".btn-floating").css("background-color", themeColor);
-      $(".dropdown-content>li>a").css("color", themeColor);
-      
-      // Update Theme Color
-       if (typeof(Storage) !== "undefined") {
-        // Store
-        localStorage.setItem("themeColor", themeColor);
-
-       } else {
-      Materialize.toast("Sorry, your browser does not support Web Storage...", 4000) 
-       }
-
-    });
-	
 	$('select').material_select();
 // ввод только цыфр в инпуты
     $('input#fns, input#kpp, input#rnm, input#nfn, input#numb_zn').keypress(function(event){
@@ -63,11 +37,44 @@ themeColor = 'blue';
        $(".header-top__container_v2").toggleClass("opened") 
     });
 
+// 
+
+$('.datepicker').pickadate({
+selectMonths: true,//Creates a dropdown to control month
+selectYears: 5,//Creates a dropdown of 15 years to control year
+firstDay: 1, //First day of week (0: Sunday, 1: Monday etc).  
+//The title label to use for the month nav buttons
+//labelMonthNext: 'Next Month',
+//labelMonthPrev: 'Last Month',
+//The title label to use for the dropdown selectors
+//labelMonthSelect: 'Select Month',
+//labelYearSelect: 'Select Year',
+//Months and weekdays
+monthsFull: [ 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь' ],
+monthsShort: [ 'Янв', 'Фев', 'Мрт', 'Апр', 'Майr', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Нбр', 'Дек' ],
+weekdaysFull: [ 'Воскресение', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота' ],
+weekdaysShort: [ 'Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб' ],
+//Materialize modified
+weekdaysLetter: [ 'В', 'П', 'В', 'С', 'Ч', 'П', 'С' ],
+//Today and clear
+today: 'Сегодня',
+clear: 'Сбросить',
+close: 'ОК',
+//The format to show on the `input` element
+format: 'dd.mm.yyyy',
+minDate: 'today'
+});
 
 
-
-
-
+var dt=new Date();
+var month = dt.getMonth();
+if (month<10) month='0'+month;
+var day = dt.getDate();
+if (day<10) day='0'+day;
+var year = dt.getFullYear();
+date_first.value=day+'.'+month+'.'+year;
+var month = dt.getMonth()+1;
+date_second.value=day+'.'+month+'.'+year;
 
 
 
