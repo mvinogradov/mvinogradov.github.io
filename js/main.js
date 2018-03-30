@@ -65,16 +65,23 @@ format: 'dd.mm.yyyy',
 minDate: 'today'
 });
 
-
 var dt=new Date();
 var month = dt.getMonth();
 if (month<10) month='0'+month;
 var day = dt.getDate();
 if (day<10) day='0'+day;
 var year = dt.getFullYear();
-date_first.value=day+'.'+month+'.'+year;
-var month = dt.getMonth()+1;
 date_second.value=day+'.'+month+'.'+year;
+
+var dt=new Date();
+dt.setMonth(dt.getMonth() - 1);
+var month = dt.getMonth();
+if (month<10) month='0'+month;
+var day = dt.getDate();
+if (day<10) day='0'+day;
+var year = dt.getFullYear();
+date_first.value=day+'.'+month+'.'+year;
+
 
 
 
