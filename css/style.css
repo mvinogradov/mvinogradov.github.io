@@ -42,6 +42,15 @@ footer {
     padding-left: 215px;
 }
 
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 
 /*Меню---------------------------------------*/
 
@@ -240,6 +249,10 @@ footer {
     .table-block {
         padding-top: 190px;
     }
+    .table-block-cash {
+        padding-top: 120px;
+    }
+    
 }
 
 .nav_margin {
@@ -257,7 +270,6 @@ footer {
 
 .header-top__text {
     font-size: 20px;
-    font-weight: 600;
     color: #fff;
     word-wrap: normal;
     position: relative;
@@ -316,6 +328,20 @@ footer {
     color: RGB(114, 188, 235);
 }
 
+.breadcrumb_new {
+    color: RGB(190,224,246);
+    font-size: 14px;
+}
+
+.breadcrumb_new:last-child {
+    color: #fff !important;
+    font-size: 14px;
+}
+
+.breadcrumb_new:before {
+    color: RGB(190,224,246);
+    font-size: 14px;
+}
 .nav-wrapper_color {
     background-color: #def3fd;
     border: none;
@@ -550,6 +576,9 @@ footer {
 @media only screen and (min-width: 992px) {
     .table-block {
         padding-top: 270px;
+    }
+    .table-block-cash {
+        padding-top: 200px; 
     }
     .header-top__text {
         top: -15px;
@@ -791,4 +820,34 @@ footer {
 /*чеки*/
 .br_сolor {
     background-color: #fff;
+}
+
+.sum_coming {
+    color: #3dbb00;
+    font-weight: 600;
+}
+
+.sum_cost {
+    color: #f24841;
+    font-weight: 600;
+}
+
+.sum_ {
+    color: #f24841;
+    font-weight: 600;
+}
+
+.page-footer {
+    background-color: #f2f2f2; 
+    color: black;
+}
+
+.field_width {
+    width: 85px;
+    margin-left: 20px;
+}
+.numb_cash {
+    margin-right: 20px;
+    width: 115px;
+    margin-left: 20px;
 }
