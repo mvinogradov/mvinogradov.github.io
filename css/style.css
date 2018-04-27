@@ -250,7 +250,13 @@ footer {
         padding-top: 190px;
     }
     .table-block-cash {
-        padding-top: 120px;
+        padding-top: 200px;
+    }
+    
+}
+@media only screen and (max-width: 1548px) {
+    .table-block-cash {
+        padding-top: 400px;
     }
     
 }
@@ -295,6 +301,7 @@ footer {
 .top-navbar-fixed {
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 @media only screen and (max-width: 601px) {
@@ -470,9 +477,7 @@ footer {
         left: 0;
     }
     .search_box {
-        max-height: 993pxpx;
-        margin: 20px 0;
-        display: none;
+        width: 100% !important;
     }
 }
 
@@ -486,10 +491,11 @@ footer {
 .btn_cash_search {
     background-color: #0071b8 !important;
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-bottom: 20px;
 }
-
+.btn_cash_save {
+   margin-left: 15px;  
+}
 .btn_cash_search:hover {
     background-color: #0071b8 !important;
     opacity: 0.9;
@@ -498,6 +504,13 @@ footer {
 .search_box {
     background-color: #f2f2f2;
     padding-left: 10px;
+    position: fixed;
+    width: calc(100% - 215px);
+}
+
+/*чеки------------------------------------------------------*/
+.iput_search_chek {
+    width: 100px; !important;
 }
 
 
@@ -845,6 +858,9 @@ footer {
 .field_width {
     width: 85px;
     margin-left: 20px;
+}
+.field_width_search_box {
+    width: 145px;
 }
 .numb_cash {
     margin-right: 20px;
