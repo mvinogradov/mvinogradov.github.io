@@ -10,6 +10,13 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	 <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="js/pagination.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.pager.js"></script>
 </head>
 
 <body class="body_cash">
@@ -125,7 +132,7 @@
 	</header>
 	<main>
 		<div class="table-block">
-			<table class="highlight" id="myTable">
+			<table class="highlight tablesorter" id="myTableSort">
 				<thead>
 					<tr>
 						<th></th>
@@ -138,7 +145,7 @@
 						<th>Чеки</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody id="myTable">
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_red"></span></td>
 						<td>1</td>
@@ -260,6 +267,127 @@
 						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
 						</td>
 					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>12</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>13</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>14</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>15</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>17</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>18</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>19</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>20</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>21</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>22</td>
+						<td>Касса №1 в продовольственном отделе</td>
+						<td>г. Москва, Научный проезд 19</td>
+						<td>Атол 115-Ф</td>
+						<td>02.02.2018 14:12</td>
+						<td>02.02.2018 14:12</td>
+						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
+						</td>
+					</tr>
 				</tbody>
 			</table>
 			<div class="row">	
@@ -273,11 +401,6 @@
 			</div>
        
     </footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
-    <script type="text/javascript" src="js/pagination.js"></script>
     <script>
 
 $(document).ready(function($){
@@ -300,10 +423,41 @@ $(document).ready(function($){
 });
 
 </script>
-<script>
-$(document).ready(function($){
-$("#myTable").pageMe({pagerSelector:"#myPager"});
-});
-				</script>
+<script type="text/javascript">
+      $(document).ready(function(){
+        $('#myTable').pageMe({
+          pagerSelector:'#myPager',
+          activeColor: '#0071b8',
+          prevText:'Prev',
+          nextText:'Next',
+          showPrevNext:true,
+          hidePageNumbers:false,
+          perPage:10
+        });
+				
+	      // Write on keyup event of keyword input element
+				/*$("#search").keyup(function(){
+					
+					_this = this;
+					// Show only matching TR, hide rest of them
+					$.each($("#tabla tbody tr"), function() {
+							alert("Encontrado");
+							if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+								 $(this).hide();
+							else
+								 $(this).show();
+					});
+				}); */
+
+      });
+    </script>
+    <script>
+		
+		$(document).ready(function() 
+    { 
+        $("#myTableSort").tablesorter(); 
+    } 
+); 
+		</script>
 </body>
 </html>
