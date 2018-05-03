@@ -10,13 +10,12 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	 <script type="text/javascript" src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
     <script type="text/javascript" src="js/pagination.js"></script>
     <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
-    <script type="text/javascript" src="js/jquery.tablesorter.pager.js"></script>
 </head>
 
 <body class="body_cash">
@@ -76,7 +75,7 @@
 					<span class="header-top__text">Общество с ограниченной ответственностью "Продуктовый магазин"</span>
 				</div>
 			</nav>
-			<div class="row search_box row_margin_none">
+			<div class="row search_box row_margin_none hide-on-med-and-down">
 
 				<div class="input-field col s2">
 					<input id="name_cash" type="text">
@@ -136,7 +135,7 @@
 				<thead>
 					<tr>
 						<th></th>
-						<th>№</th>
+						<th class="table__td_two">№</th>
 						<th>Касса</th>
 						<th>Адрес</th>
 						<th>Модель</th>
@@ -391,8 +390,13 @@
 				</tbody>
 			</table>
 			<div class="row">	
-				<ul class="pagination pager footer_pagination" id="myPager">
+				<ul class="pagination pager" id="myPager">
 				</ul>
+                
+                 <div class="field_width">
+                <input readonly value="10" id="cash_numb" type="text">
+               
+            </div>
 			</div>
 		</div>
 	</main>
@@ -423,7 +427,15 @@ $(document).ready(function($){
 });
 
 </script>
-<script type="text/javascript">
+    <script>
+		
+		$(document).ready(function() 
+    { 
+        $("#myTableSort").tablesorter(); 
+    } 
+); 
+		</script>
+    <script type="text/javascript">
       $(document).ready(function(){
         $('#myTable').pageMe({
           pagerSelector:'#myPager',
@@ -451,13 +463,5 @@ $(document).ready(function($){
 
       });
     </script>
-    <script>
-		
-		$(document).ready(function() 
-    { 
-        $("#myTableSort").tablesorter(); 
-    } 
-); 
-		</script>
 </body>
 </html>
