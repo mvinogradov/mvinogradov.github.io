@@ -2,10 +2,10 @@ $(document).ready(function() {
  
 	
 //боковая панель 
-	 $('.button-collapse').sideNav({
+/*	 $('.button-collapse').sideNav({
       menuWidth: 215, // Default is 300
     }
-  );
+  );*/
     
     $(document).ready(function(){
     $('.datepicker').datepicker();
