@@ -10,12 +10,11 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/style.css">
-	 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
-    <script type="text/javascript" src="js/pagination.js"></script>
-    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="js/materialize-pagination.js"></script>
 </head>
 
 <body class="body_cash">
@@ -131,7 +130,7 @@
 	</header>
 	<main>
 		<div class="table-block">
-			<table class="highlight tablesorter" id="myTableSort">
+			<table class="highlight" id="myTable">
 				<thead>
 					<tr>
 						<th></th>
@@ -250,7 +249,7 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>г. Москва, Научный проезд 19</td>
 						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
+						<td>01.02.2018 14:12</td>
 						<td>02.02.2018 14:12</td>
 						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
 						</td>
@@ -261,7 +260,7 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>г. Москва, Научный проезд 19</td>
 						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
+						<td>03.02.2018 14:12</td>
 						<td>02.02.2018 14:12</td>
 						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
 						</td>
@@ -272,7 +271,7 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>г. Москва, Научный проезд 19</td>
 						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
+						<td>02.05.2018 14:12</td>
 						<td>02.02.2018 14:12</td>
 						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
 						</td>
@@ -283,7 +282,7 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>г. Москва, Научный проезд 19</td>
 						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
+						<td>02.01.2018 14:12</td>
 						<td>02.02.2018 14:12</td>
 						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
 						</td>
@@ -390,13 +389,16 @@
 				</tbody>
 			</table>
 			<div class="row">	
-				<ul class="pagination pager" id="myPager">
-				</ul>
+			<ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
                 
-                 <div class="field_width">
-                <input readonly value="10" id="cash_numb" type="text">
-               
-            </div>
 			</div>
 		</div>
 	</main>
@@ -425,43 +427,19 @@ $(document).ready(function($){
 // маска для инпута "номер ФН"		
 	 $("#numb_fn").inputmask("9999 9999 9999 9999",{ showMaskOnHover: false});
 });
-
-</script>
-    <script>
-		
-		$(document).ready(function() 
-    { 
-        $("#myTableSort").tablesorter(); 
-    } 
-); 
-		</script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('#myTable').pageMe({
-          pagerSelector:'#myPager',
-          activeColor: '#0071b8',
-          prevText:'Prev',
-          nextText:'Next',
-          showPrevNext:true,
-          hidePageNumbers:false,
-          perPage:10
-        });
-				
-	      // Write on keyup event of keyword input element
-				/*$("#search").keyup(function(){
-					
-					_this = this;
-					// Show only matching TR, hide rest of them
-					$.each($("#tabla tbody tr"), function() {
-							alert("Encontrado");
-							if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
-								 $(this).hide();
-							else
-								 $(this).show();
-					});
-				}); */
-
-      });
     </script>
+    <script>
+        
+        $('#pagination').materializePagination({
+    align: 'left',
+    lastPage:  10,
+    firstPage:  1,
+    urlParameter: 'page',
+    useUrlParameter: true,
+    onClickCallback: function(requestedPage){
+        console.log('Requested page is '+ requestedPage);
+    }
+}); 
+            </script>
 </body>
 </html>
