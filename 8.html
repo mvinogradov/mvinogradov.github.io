@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<title>Экспресс касса</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body_cash">
+	<header>
+		<ul id="slide-out" class="side-nav fixed ">
+			<li>
+				<div class="user-view">
+					<a href="#!user">
+						<div class="logo"></div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a class="waves-effect menu_height" href="#!">
+					<div class="kass"></div>Кассы</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height select_menu" href="#!">
+					<div class="check check_wh"></div>Чеки</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height" href="#!">
+					<div class="licenz"></div>Лицензии</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height" href="#!">
+					<div class="edoc"></div>Документы</a>
+			</li>
+			<div class="l-side__string l-side__string_last">
+				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+					<span class="without-fill">8 800 333 8888</span>
+				</div>
+				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+					<a class="l-side__link" href="#">Оставить отзыв</a>
+				</div>
+				<div>
+					<img class="vsostave" src="img/vsostave.png">
+				</div>
+			</div>
+		</ul>
+		<div class="top-navbar-fixed">
+			<nav class="nav-extended nav_color fixed_nav_width header_nav_h">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right">
+						<li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Выход"><i class="material-icons color_ico">exit_to_app</i></a></li>
+					</ul>
+				</div>
+				<div class="nav-content nav_margin nav_top_margin">
+					<span class="header-top__text">Общество с ограниченной ответственностью "Продуктовый магазин"</span>
+					<div class="col s12 ">
+						<a href="#!" class="breadcrumb breadcrumb_new">Кассы</a>
+						<a href="#!" class="breadcrumb breadcrumb_new">Касса №1 в продовольственном отделе</a>
+					</div>
+				</div>
+
+			</nav>
+			<div class="row search_box row_margin_none z-depth-1">
+				<div class="input-field col field_width_search_box">
+					<input id="date_first" type="text" class="datepicker">
+					<label for="date_first">Начало периода</label>
+				</div>
+
+				<div class="input-field col field_width_search_box">
+					<input id="date_second" type="text" class="datepicker">
+					<label for="date_second">Конец периода</label>
+				</div>
+				<div class="input-field col field_width_search_box hide-on-med-and-down">
+
+
+					<select>
+      <option value="1">Все</option>
+      <option value="2">Кассовый чек</option>
+      <option value="3">Регистрация</option>
+      <option value="4">Открытие смены</option>
+      <option value="5">Закрытие смены</option>
+      <option value="6">Смена регистрации</option>
+      <option value="7">Чек коррекции</option>
+                                    
+    </select>
+					<label>Тип чека</label>
+
+
+
+
+				</div>
+				<div class="input-field col field_width_search_box hide-on-med-and-down">
+
+
+					<select>
+      <option value="1">Все</option>
+      <option value="2">Наличными</option>
+      <option value="3">Электрон.</option>
+      <option value="4">Смешанный</option>                                 
+    </select>
+					<label>Тип оплаты</label>
+
+
+
+
+				</div>
+				<div class="input-field col field_width_search_box hide-on-med-and-down">
+
+
+					<select>
+      <option value="1">Все</option>
+      <option value="2">Упр. Доход</option>
+      <option value="3">Упр. Дох/Расх</option>
+      <option value="4">ЕНВД</option>  
+      <option value="5">ЕСХН</option>  
+      <option value="6">Патентная</option>  
+    </select>
+					<label>СНО</label>
+
+
+
+
+				</div>
+				<div class="input-field col field_width_search_box hide-on-med-and-down">
+					<input id="sum" type="text">
+					<label for="sum">Сумма</label>
+				</div>
+				<div class="input-field col field_width_search_box hide-on-med-and-down">
+					<input id="smena" type="text">
+					<label for="smena">Смена</label>
+				</div>
+				<div class="col">
+					<a class="waves-effect waves-light btn btn_cash_search">Найти</a>
+					<a class="waves-effect waves-light btn btn_cash_search btn_cash_save hide-on-med-and-down">Сохранить</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="table-block-cash">
+			<table class="highlight">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Время</th>
+						<th>Номер чека</th>
+						<th>Тип</th>
+						<th>Приход/Расход</th>
+						<th class="hide-on-med-and-down">Наличными</th>
+						<th class="hide-on-med-and-down">Электронными</th>
+						<th class="hide-on-med-and-down">СНО</th>
+						<th class="hide-on-med-and-down">НДС:</th>
+						<th class="hide-on-med-and-down">10%</th>
+						<th class="hide-on-med-and-down">18%</th>
+						<th class="hide-on-med-and-down">10/110%</th>
+						<th class="hide-on-med-and-down">18/118%</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>115</td>
+						<td>Кассовый чек</td>
+						<td class="sum_coming">+55000</td>
+						<td class="hide-on-med-and-down">1000</td>
+						<td class="hide-on-med-and-down">54000</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>116</td>
+						<td>Кассовый чек</td>
+						<td class="sum_coming">+200</td>
+						<td class="hide-on-med-and-down">20</td>
+						<td class="hide-on-med-and-down">180</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">20</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>117</td>
+						<td>Кассовый чек</td>
+						<td class="sum_cost">-1000</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>117</td>
+						<td>Кассовый чек</td>
+						<td class="sum_cost">-1000</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>118</td>
+						<td>Кассовый чек</td>
+						<td class="sum_coming">+2200</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>119</td>
+						<td>Кассовый чек</td>
+						<td class="sum_coming">+33300</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>120</td>
+						<td>Кассовый чек</td>
+						<td class="sum_coming">+2323200</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>121</td>
+						<td>Кассовый чек</td>
+						<td class="sum_cost">-1000</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>122</td>
+						<td>Кассовый чек</td>
+						<td class="sum_cost">-1000</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>16.02.18 18:30</td>
+						<td>122</td>
+						<td>Кассовый чек</td>
+						<td class="sum_cost">-1000</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">Упрощенная</td>
+						<td class="hide-on-med-and-down"> </td>
+						<td class="hide-on-med-and-down">5500</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+						<td class="hide-on-med-and-down">—</td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div id="modal_chek" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					 <div class="check_print"><br>
+          <br>
+          ***********************************<br>
+          КАССОВЫЙ ЧЕК<br>
+          ***********************************<br>
+          <br>
+          ООО "МОСФЕТ"<br>
+          ИНН 7746123451<br>
+          N: 4<br>
+          19.09.17 16:57<br>
+          СМЕНА: 1<br>
+          ПРИХОД<br>
+          ОСН<br>
+          КАССИР Погонин Д.Г.<br>
+          N KKT: 0000000001053903<br>
+          <br>
+          ***********************************<br>
+          <br>
+          18<br>
+          Ц. ЗА. ЕД. ПР: 20.00<br>
+          КОЛИЧ. ПР: 1.0<br>
+          НДС 18%<br>
+          НДС ПР: 3.05<br>
+          СУМ. ПР: 20.00<br>
+          <br>
+          ***********************************<br>
+          <br>
+          ИТОГО: 20.00<br>
+          НАЛИЧНЫМИ: 20.00<br>
+          ЭЛЕКТРОННЫМИ: 0.00<br>
+          АВАНС: 0.00<br>
+          В КРЕДИТ: 0.00<br>
+          ОБМЕН: 0.00<br>
+          НДС 18%: 3.05<br>
+          ЭЛ.АДР.ОТПРАВИТЕЛЯ: <a class="moz-txt-link-abbreviated" href="mailto:OFD@GARANT.RU">OFD@GARANT.RU</a><br>
+          ЭЛ.АДР.ОТПРАВИТЕЛЯ: <a class="moz-txt-link-abbreviated" href="mailto:OFD@GARANT.RU">OFD@GARANT.RU</a><br>
+          САЙТ ФНС: <a class="moz-txt-link-abbreviated" href="http://WWW.NALOG.RU">WWW.NALOG.RU</a><br>
+          N ФД: 6<br>
+          N ФН: 9999078900004589<br>
+          ФП 1938576193<br>
+          <br>
+          ***********************************<br>
+        </div>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect btn-flat">Печать</a>
+					<a href="#!" class="modal-close waves-effect btn-flat">Сохранить</a>
+					<a href="#!" class="modal-close waves-effect btn-flat">ОК</a>
+				</div>
+			</div>
+			<div class="row">
+				<div id="pagination"></div>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer ">
+		<div class="row">
+			<div class="input-field col field_width">
+				<input readonly value="+155000" id="coming" type="text" class="sum_coming">
+				<label for="coming">Приход</label>
+			</div>
+			<div class="input-field col field_width">
+				<input readonly value="-55000" id="cost" type="text" class="sum_cost">
+				<label for="cost">Расход</label>
+			</div>
+			<div class="input-field col field_width">
+				<input readonly value="55000" id="nalcash" type="text">
+				<label for="nalcash">Наличными</label>
+			</div>
+			<div class="input-field col field_width">
+				<input readonly value="55000" id="ecash" type="text">
+				<label for="ecash">Электронными</label>
+			</div>
+			<div class="input-field col field_width">
+				<input readonly value="55" id="nds10" type="text">
+				<label for="nds10">НДС 10%</label>
+			</div>
+			<div class="input-field col field_width">
+				<input readonly value="55" id="nds18" type="text">
+				<label for="nds18">НДС 18%</label>
+			</div>
+			<div class="input-field col field_width">
+				<input readonly value="5" id="nds110" type="text">
+				<label for="nds110"><span class="no_warp">НДС 10/110%</span></label>
+			</div>
+			<div class="input-field col field_width">
+				<input readonly value="50" id="nds118" type="text">
+				<label for="nds118"><span class="no_warp">НДС 18/118%</span></label>
+			</div>
+
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/materialize-pagination.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.datepicker').pickadate({
+				selectMonths: true, //Creates a dropdown to control month
+				selectYears: 5, //Creates a dropdown of 15 years to control year
+				firstDay: 1, //First day of week (0: Sunday, 1: Monday etc).  
+				//The title label to use for the month nav buttons
+				//labelMonthNext: 'Next Month',
+				//labelMonthPrev: 'Last Month',
+				//The title label to use for the dropdown selectors
+				//labelMonthSelect: 'Select Month',
+				//labelYearSelect: 'Select Year',
+				//Months and weekdays
+				monthsFull: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+				monthsShort: ['Янв', 'Фев', 'Мрт', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Нбр', 'Дек'],
+				weekdaysFull: ['Воскресение', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+				weekdaysShort: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+				//Materialize modified
+				weekdaysLetter: ['В', 'П', 'В', 'С', 'Ч', 'П', 'С'],
+				//Today and clear
+				today: 'Сегодня',
+				clear: 'Сбросить',
+				close: 'ОК',
+				//The format to show on the `input` element
+				format: 'dd.mm.yyyy',
+				minDate: 'today'
+			});
+
+			var dt = new Date();
+			var month = dt.getMonth();
+			if (month < 10) month = '0' + month;
+			var day = dt.getDate();
+			if (day < 10) day = '0' + day;
+			var year = dt.getFullYear();
+			date_second.value = day + '.' + month + '.' + year;
+
+			var dt = new Date();
+			dt.setMonth(dt.getMonth() - 1);
+			var month = dt.getMonth();
+			if (month < 10) month = '0' + month;
+			var day = dt.getDate();
+			if (day < 10) day = '0' + day;
+			var year = dt.getFullYear();
+			date_first.value = day + '.' + month + '.' + year;
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('#pagination').materializePagination({
+				lastPage: 100,
+				firstPage: 1,
+				align: 'right',
+				urlParameter: 'page',
+				useUrlParameter: true,
+				onClickCallback: function() {}
+			});
+		});
+	</script>
+
+	<script>
+			$("tr").on("click", "td", function() {
+				$('.modal').modal('open');;
+			});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('.modal').modal();
+		});
+	</script>
+</body>
+
+</html>

@@ -7,7 +7,6 @@ $(document).ready(function() {
     }
   );
     
-  
 //селект материал
 	$('select').material_select();
 // ввод только цыфр в инпуты
@@ -21,21 +20,7 @@ $(document).ready(function() {
 		if(!/\d/.test(keyChar))	return false;	
         });
     });
-// клик по tr
-    $("tr").on("click", "td", function() {
-        if(!$(this).hasClass("table__td_six") && !$(this).parent("tr").hasClass("table__tr_header")){
-            window.location = $(this).parent("tr").data("href"); 
-        }
-    });
-     $("tr").on("click", ".table__td_six", function() {
-            window.location = $(this).data("href");
-    });
-// открыть фильтры
-    $(".button-filtres").on("click", function(){
-       $(".header-top__container_v2").toggleClass("opened") 
-    });
-
-// 
+    
 
 
 

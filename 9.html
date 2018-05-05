@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="img/favicon.png" type="image/x-icon">
 	<title>Экспресс касса</title>
-	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/materialize.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -23,16 +22,16 @@
 				</div>
 			</li>
 			<li>
-				<a class="waves-effect menu_height select_menu" href="#!">
-					<div class="kass kass_wh"></div>Кассы</a>
+				<a class="waves-effect menu_height" href="#!">
+					<div class="kass"></div>Кассы</a>
 			</li>
 			<li>
 				<a class="waves-effect menu_height" href="#!">
 					<div class="check"></div>Чеки</a>
 			</li>
 			<li>
-				<a class="waves-effect menu_height" href="#!">
-					<div class="licenz"></div>Лицензии</a>
+				<a class="waves-effect menu_height select_menu" href="#!">
+					<div class="licenz licenz_wh"></div>Лицензии</a>
 			</li>
 			<li>
 				<a class="waves-effect menu_height" href="#!">
@@ -64,58 +63,39 @@
 				<div class="nav-content nav_margin nav_top_margin">
 					<span class="header-top__text">Общество с ограниченной ответственностью "Продуктовый магазин"</span>
 				</div>
+
 			</nav>
-			<div class="row search_box row_margin_none hide-on-med-and-down">
-
-				<div class="input-field col s2">
-					<input id="name_cash" type="text">
-					<label type="text" for="name_cash">Название кассы</label>
-				</div>
-				<div class="input-field col s2">
-					<input id="rnm" type="text">
-					<label data-error="РНМ должен содержать 16 цифр" type="text" for="rnm">РНМ</label>
-				</div>
-
-
-				<div class="input-field col s2">
-					<input id="numb_fn" type="text">
-					<label data-error="ФН должен содержать 16 цифр" type="text" for="numb_fn">Номер ФН</label>
-				</div>
-				<div class="input-field col s2">
-					<input id="numb_zn" type="text">
-					<label type="text" for="numb_zn">Заводской номер</label>
-				</div>
-
-				<a class="waves-effect waves-light btn btn_cash_search left">Найти</a>
-				<a class="waves-effect waves-light btn btn_cash_search left btn_cash_save">Сохранить</a>
-
-			</div>
-
-			<div class="row add_box row_margin_none z-depth-1">
-				<a class="waves-effect waves-light btn btn_cash_add left"><i class="material-icons left">add</i>Добавить кассу</a>
+			<div class="row license_box row_margin_none z-depth-1">
+				<a class="waves-effect waves-light btn btn_cash_add left"><i class="material-icons left">add</i>Погасить пин-код</a>
 				<form action="#">
 					<div class="col s6 m3 l4 xl2 fix_col_radio">
 						<p>
 							<input class="radio_btn" checked name="group1" type="radio" id="test1" />
-							<label for="test1"><span class="no_warp">Все кассы (9)</span></label>
+							<label for="test1"><span class="no_warp">Все (12)</span></label>
 						</p>
 					</div>
 					<div class="col s6  m3 l4  xl2 fix_col_radio">
 						<p>
 							<input class="radio_btn" name="group1" type="radio" id="test2" />
-							<label for="test2"><span class="no_warp">Проблемные (9)</span></label>
+							<label for="test2"><span class="no_warp">Не активные (12)</span></label>
 						</p>
 					</div>
 					<div class="col s6  m3 l4  xl2 fix_col_radio">
 						<p>
 							<input class="radio_btn" name="group1" type="radio" id="test3" />
-							<label for="test3"><span class="no_warp">В обработке (1)</span></label>
+							<label for="test3"><span class="no_warp">Скоро истекут (11)</span></label>
 						</p>
 					</div>
 					<div class="col s6 m3 l4  xl2 fix_col_radio">
 						<p>
-							<input  class="radio_btn" name="group1" type="radio" id="test4" />
-							<label for="test4"><span class="no_warp">В работе (6)</span></label>
+							<input class="radio_btn" name="group1" type="radio" id="test4" />
+							<label for="test4"><span class="no_warp">Истекли (26)</span></label>
+						</p>
+					</div>
+					<div class="col s6 m3 l4  xl2 fix_col_radio">
+						<p>
+							<input class="radio_btn" name="group1" type="radio" id="test5" />
+							<label for="test5"><span class="no_warp">Актыивные (26)</span></label>
 						</p>
 					</div>
 				</form>
@@ -123,8 +103,53 @@
 		</div>
 	</header>
 	<main>
-		<div class="table-block">
-			<table class="highlight" id="myTable">
+		<div class="table-block-lisenz">
+			<table class="highlight">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Наименование</th>
+						<th>Статус</th>
+						<th>Касс доступно</th>
+						<th>Дней осталось</th>
+						<th>Начало</th>
+						<th>Окончание</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Активна</td>
+						<td>18</td>
+						<td>286</td>
+						<td>16.02.2018</td>
+						<td>16.02.2019</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_red"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Истекла</td>
+						<td>0</td>
+						<td>0</td>
+						<td>16.02.2017</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_red"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Истекла</td>
+						<td>0</td>
+						<td>0</td>
+						<td>16.02.2017</td>
+						<td>16.02.2018</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="modal_cash" class="modal modal-fixed-footer">
+				<div class="modal-content">
+				<h4>№129 на 20 касс</h4>
+				<table class="highlight" id="myTable">
 				<thead>
 					<tr>
 						<th></th>
@@ -132,10 +157,6 @@
 						<th>Касса</th>
 						<th>Заводской номер</th>
 						<th>Адрес</th>
-						<th>Модель</th>
-						<th>Соединение</th>
-						<th>Данные</th>
-						<th>Чеки</th>
 					</tr>
 				</thead>
 				<tbody id="myTable">
@@ -145,11 +166,6 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
@@ -157,11 +173,6 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_yellow"></span></td>
@@ -169,11 +180,6 @@
 						<td>Касса №1 в продовольственном отделе Магазина пятерочка</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_black"></span></td>
@@ -181,11 +187,6 @@
 						<td>На кассе была замена ФН, висит тут мертвым грузом</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
@@ -193,11 +194,6 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
@@ -205,11 +201,6 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
@@ -217,11 +208,6 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
@@ -229,11 +215,6 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"> <span class="circle_my circle_green"></span></td>
@@ -241,11 +222,6 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>02.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 					<tr data-href="#">
 						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
@@ -253,57 +229,32 @@
 						<td>Касса №1 в продовольственном отделе</td>
 						<td>123456789123456</td>
 						<td>г. Москва, Научный проезд 19</td>
-						<td>Атол 115-Ф</td>
-						<td>01.02.2018 14:12</td>
-						<td>02.02.2018 14:12</td>
-						<td class="table__td_six" data-href="#123123"><img class="hovered check_size" src="img/bill.svg">
-						</td>
 					</tr>
 				</tbody>
 			</table>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect btn-flat">Сохранить</a>
+					<a href="#!" class="modal-close waves-effect btn-flat">ОК</a>
+				</div>
+			</div>
 			<div class="row">
 				<div id="pagination"></div>
 			</div>
 		</div>
 	</main>
-	<footer class="page-footer">
+	<footer class="page-footer ">
 		<div class="row">
 		</div>
-
 	</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
 	<script type="text/javascript" src="js/materialize-pagination.js"></script>
-	<script>
-		$(document).ready(function($) {
-
-			// маска для инпута "РНМ"	
-			$("#rnm").inputmask("9999 9999 9999 9999");
-
-			// маска для инпута "номер ФН"	
-			$("#numb_fn").inputmask("9999 9999 9999 9999");
-		});
-	</script>
-
-	<script>
-		$(document).ready(function($) {
-
-			// маска для инпута "РНМ"		
-			$("#rnm").inputmask("9999 9999 9999 9999", {
-				showMaskOnHover: false
-			});
-			// маска для инпута "номер ФН"		
-			$("#numb_fn").inputmask("9999 9999 9999 9999", {
-				showMaskOnHover: false
-			});
-		});
-	</script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<script>
 		$(document).ready(function() {
 			$('#pagination').materializePagination({
-				lastPage: 100,
+				lastPage: 0,
 				firstPage: 1,
 				align: 'right',
 				urlParameter: 'page',
@@ -312,18 +263,17 @@
 			});
 		});
 	</script>
-	<script>+
+	<script>
 		$(document).ready(function() {
 			$("tr").on("click", "td", function() {
-				if (!$(this).hasClass("table__td_six") && !$(this).parent("tr").hasClass("table__tr_header")) {
-					window.location = $(this).parent("tr").data("href");
-				}
-			});
-			$("tr").on("click", ".table__td_six", function() {
-				window.location = $(this).data("href");
+				$('.modal').modal('open');;
 			});
 		});
 	</script>
+	<script>
+		$(document).ready(function() {
+			$('.modal').modal();
+		});
+	</script>
 </body>
-
 </html>

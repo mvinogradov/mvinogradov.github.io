@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon">
+	<title>Экспресс касса</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body_cash">
+	<header>
+		<ul id="slide-out" class="side-nav fixed ">
+			<li>
+				<div class="user-view">
+					<a href="#!user">
+						<div class="logo"></div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a class="waves-effect menu_height" href="#!">
+					<div class="kass"></div>Кассы</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height" href="#!">
+					<div class="check"></div>Чеки</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height " href="#!">
+					<div class="licenz"></div>Лицензии</a>
+			</li>
+			<li>
+				<a class="waves-effect menu_height select_menu" href="#!">
+					<div class="edoc edoc_wh"></div>Документы</a>
+			</li>
+			<div class="l-side__string l-side__string_last">
+				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+					<span class="without-fill">8 800 333 8888</span>
+				</div>
+				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+					<a class="l-side__link" href="#">Оставить отзыв</a>
+				</div>
+				<div>
+					<img class="vsostave" src="img/vsostave.png">
+				</div>
+			</div>
+		</ul>
+		<div class="top-navbar-fixed">
+			<nav class="nav-extended nav_color fixed_nav_width header_nav_h">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+					<ul id="nav-mobile" class="right">
+						<li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
+						<li><a href="#" class="header-top__img-right" title="Выход"><i class="material-icons color_ico">exit_to_app</i></a></li>
+					</ul>
+				</div>
+				<div class="nav-content nav_margin nav_top_margin">
+					<span class="header-top__text">Общество с ограниченной ответственностью "Продуктовый магазин"</span>
+				</div>
+
+			</nav>
+			<div class="row search_box row_margin_none z-depth-1">
+				<div class="input-field col s3">
+					<input id="date_first" type="text" class="datepicker">
+					<label for="date_first">Началыво периода</label>
+				</div>
+
+				<div class="input-field col s3">
+					<input id="date_second" type="text" class="datepicker">
+					<label for="date_second">Конец периода</label>
+				</div>
+				<div class="input-field col s3 hide-on-med-and-down">
+
+
+					<select>
+      <option value="1">Все</option>
+      <option value="2">Завершен</option>
+      <option value="3">Ожидает контрагента</option>
+      <option value="4">Ожидает вас</option>
+      <option value="5">Успешно завершен</option>
+      <option value="6">Просрочен</option>
+      <option value="7">Завершен с ошибкой</option>
+                                    
+    </select>
+					<label>Статус</label>
+
+
+
+
+				</div>
+				<div class="col">
+					<a class="waves-effect waves-light btn btn_cash_search">Найти</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="table-block-docs">
+			<table class="highlight">
+				<thead>
+					<tr>
+						<th></th>
+						<th>Наименование</th>
+						<th>Статус</th>
+						<th>Дата создания</th>
+						<th>Дата изменения</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr data-href="#1">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Успешно проведен</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#2">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Успешно проведен</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#3">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Успешно проведен</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#3">
+						<td class="circle_padding"><span class="circle_my circle_yellow"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Ожидает контаргента</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#3">
+						<td class="circle_padding"><span class="circle_my circle_yellow"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Ожидает контаргента</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#3">
+						<td class="circle_padding"><span class="circle_my circle_yellow"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Ожидает вас</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#3">
+						<td class="circle_padding"><span class="circle_my circle_red"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Просрочен</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#3">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Успешно проведен</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#3">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Успешно проведен</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+					<tr data-href="#3">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>Документы №1234567891 от 15.05.2018</td>
+						<td>Успешно проведен</td>
+						<td>16.02.2018</td>
+						<td>16.02.2018</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="row">
+				<div id="pagination"></div>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer ">
+		<div class="row">
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/materialize-pagination.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.datepicker').pickadate({
+				selectMonths: true, //Creates a dropdown to control month
+				selectYears: 5, //Creates a dropdown of 15 years to control year
+				firstDay: 1, //First day of week (0: Sunday, 1: Monday etc).  
+				//The title label to use for the month nav buttons
+				//labelMonthNext: 'Next Month',
+				//labelMonthPrev: 'Last Month',
+				//The title label to use for the dropdown selectors
+				//labelMonthSelect: 'Select Month',
+				//labelYearSelect: 'Select Year',
+				//Months and weekdays
+				monthsFull: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+				monthsShort: ['Янв', 'Фев', 'Мрт', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Нбр', 'Дек'],
+				weekdaysFull: ['Воскресение', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+				weekdaysShort: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+				//Materialize modified
+				weekdaysLetter: ['В', 'П', 'В', 'С', 'Ч', 'П', 'С'],
+				//Today and clear
+				today: 'Сегодня',
+				clear: 'Сбросить',
+				close: 'ОК',
+				//The format to show on the `input` element
+				format: 'dd.mm.yyyy',
+				minDate: 'today'
+			});
+
+			var dt = new Date();
+			var month = dt.getMonth();
+			if (month < 10) month = '0' + month;
+			var day = dt.getDate();
+			if (day < 10) day = '0' + day;
+			var year = dt.getFullYear();
+			date_second.value = day + '.' + month + '.' + year;
+
+			var dt = new Date();
+			dt.setMonth(dt.getMonth() - 1);
+			var month = dt.getMonth();
+			if (month < 10) month = '0' + month;
+			var day = dt.getDate();
+			if (day < 10) day = '0' + day;
+			var year = dt.getFullYear();
+			date_first.value = day + '.' + month + '.' + year;
+		});
+	</script>
+	<script>
+		$(document).ready(function() {
+			$('#pagination').materializePagination({
+				lastPage: 3,
+				firstPage: 1,
+				align: 'right',
+				urlParameter: 'page',
+				useUrlParameter: true,
+				onClickCallback: function() {}
+			});
+		});
+	</script>
+	<script>
+			$("tr").on("click", function() {
+				window.location = $(this).data("href");
+			});
+	</script>
+	
+</body>
+</html>
