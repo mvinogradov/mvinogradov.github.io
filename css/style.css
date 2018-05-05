@@ -390,11 +390,16 @@ footer {
 .card-panel {
     min-width: 280px;
     max-width: 500px;
+	position: relative;
 }
 
 .card_panel_text {
     position: relative;
     left: -145px;
+	top: 160px;
+}
+.card_panel_no_text {
+	top: 160px;
 }
 
 .panel_margin {
@@ -511,7 +516,6 @@ footer {
 
 .add_box {
     background-color: white;
-    border-bottom: solid #f2f2f2 2px;
 	position: relative;
 	top: 80px;
 }
