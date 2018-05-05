@@ -2,14 +2,12 @@ $(document).ready(function() {
  
 	
 //боковая панель 
-/*	 $('.button-collapse').sideNav({
+	 $('.button-collapse').sideNav({
       menuWidth: 215, // Default is 300
     }
-  );*/
+  );
     
-    $(document).ready(function(){
-    $('.datepicker').datepicker();
-  });
+  
 //селект материал
 	$('select').material_select();
 // ввод только цыфр в инпуты
@@ -39,48 +37,7 @@ $(document).ready(function() {
 
 // 
 
-$('.datepicker').pickadate({
-selectMonths: true,//Creates a dropdown to control month
-selectYears: 5,//Creates a dropdown of 15 years to control year
-firstDay: 1, //First day of week (0: Sunday, 1: Monday etc).  
-//The title label to use for the month nav buttons
-//labelMonthNext: 'Next Month',
-//labelMonthPrev: 'Last Month',
-//The title label to use for the dropdown selectors
-//labelMonthSelect: 'Select Month',
-//labelYearSelect: 'Select Year',
-//Months and weekdays
-monthsFull: [ 'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь' ],
-monthsShort: [ 'Янв', 'Фев', 'Мрт', 'Апр', 'Майr', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Нбр', 'Дек' ],
-weekdaysFull: [ 'Воскресение', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота' ],
-weekdaysShort: [ 'Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб' ],
-//Materialize modified
-weekdaysLetter: [ 'В', 'П', 'В', 'С', 'Ч', 'П', 'С' ],
-//Today and clear
-today: 'Сегодня',
-clear: 'Сбросить',
-close: 'ОК',
-//The format to show on the `input` element
-format: 'dd.mm.yyyy',
-minDate: 'today'
-});
 
-var dt=new Date();
-var month = dt.getMonth();
-if (month<10) month='0'+month;
-var day = dt.getDate();
-if (day<10) day='0'+day;
-var year = dt.getFullYear();
-date_second.value=day+'.'+month+'.'+year;
-
-var dt=new Date();
-dt.setMonth(dt.getMonth() - 1);
-var month = dt.getMonth();
-if (month<10) month='0'+month;
-var day = dt.getDate();
-if (day<10) day='0'+day;
-var year = dt.getFullYear();
-date_first.value=day+'.'+month+'.'+year;
 
 
 

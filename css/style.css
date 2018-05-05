@@ -249,12 +249,13 @@ footer {
     .table-block {
         padding-top: 190px;
     }
+	.add_box {
+    top: 0px !important;
+}
 }
 
 
-.nav_margin {
-    margin-bottom: 1px;
-}
+
 
 @media only screen and (max-width: 500px) {
     .no_display {
@@ -266,7 +267,7 @@ footer {
 }
 
 .header-top__text {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     word-wrap: normal;
     position: relative;
@@ -497,6 +498,7 @@ footer {
     padding-left: 10px;
     position: fixed;
     width: calc(100% - 215px);
+	min-height: 81px;
 }
 
 /*чеки------------------------------------------------------*/
@@ -894,6 +896,9 @@ padding-top: 196px;
 .field_width_search_box {
     width: 145px;
 }
+.field_width_search_cash_box {
+    max-width: 170px;
+}
 .numb_cash {
     margin-right: 20px;
     width: 85px;
@@ -913,8 +918,4 @@ table.tablesorter thead tr .headerSortUp {
 }
 table.tablesorter thead tr .headerSortDown {
 	background-image: url(../img/desc.gif);
-}
-
-.table__td_two {
-    min-width:36px;
 }
