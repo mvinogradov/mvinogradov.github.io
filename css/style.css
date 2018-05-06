@@ -332,11 +332,15 @@ footer {
     font-size: 14px;
 }
 
+
 .breadcrumb_new:last-child {
     color: #fff !important;
     font-size: 14px;
 }
-
+.breadcrumb_cash {
+   color: #fff !important;
+    font-size: 14px;
+}
 .breadcrumb_new:before {
     color: RGB(190,224,246);
     font-size: 14px;
@@ -504,6 +508,9 @@ footer {
     position: fixed;
     width: calc(100% - 215px);
 	min-height: 81px;
+}
+.input-field-margin-top {
+	margin-top: 1.5rem; 
 }
 
 /*чеки------------------------------------------------------*/
@@ -675,12 +682,12 @@ padding-top: 194px;
 }
 @media (min-width: 992px) and (max-width: 1556px) {
 .table-block-cash {
-padding-top: 270px;
+padding-top: 290px;
 	}
 }
 @media screen and (min-width: 1557px) {
 .table-block-cash {
-padding-top: 196px;
+padding-top: 206px;
 	}
 }
 
