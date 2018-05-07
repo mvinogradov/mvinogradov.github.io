@@ -97,10 +97,12 @@ footer {
     margin-top: 12px;
     margin-right: 20px;
     margin-left: 3px;
+    background-repeat: no-repeat;
 }
 
 .edoc_wh {
     background-image: url(../img/center_wh.svg);
+    background-repeat: no-repeat;
 }
 
 .licenz {
@@ -111,10 +113,12 @@ footer {
     margin-top: 12px;
     margin-right: 20px;
     margin-left: 3px;
+    background-repeat: no-repeat;
 }
 
 .licenz_wh {
     background-image: url(../img/license_wh.svg);
+    background-repeat: no-repeat;
 }
 
 .kass {
@@ -125,10 +129,12 @@ footer {
     margin-top: 12px;
     margin-right: 19px;
     margin-left: 3px;
+    background-repeat: no-repeat;
 }
 
 .kass_wh {
     background-image: url(../img/cashbox_wh.svg);
+    background-repeat: no-repeat;
 }
 
 
@@ -141,10 +147,12 @@ footer {
     margin-top: 12px;
     margin-right: 20px;
     margin-left: 4px;
+    background-repeat: no-repeat;
 }
 
 .check_wh {
     background-image: url(../img/bill_wh.svg);
+    background-repeat: no-repeat;
 }
 
 .check_size {
@@ -161,15 +169,28 @@ footer {
     margin-right: 19px;
     margin-left: 3px;
     fill: green;
+    background-repeat: no-repeat;
+}
+.analitics {
+    background-image: url(../img/analitics.svg);
+    width: 24px;
+    height: 24px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 19px;
+    margin-left: 3px;
+    background-repeat: no-repeat;
 }
 
 .setting_wh {
     background-image: url(../img/settings_wh.svg);
+    background-repeat: no-repeat;
 }
 
 .logo {
     /*  float: left;*/
     background-image: url(../img/logo_ee_cashbox.svg);
+    background-repeat: no-repeat;
     height: 36px;
     width: 143px;
 }
