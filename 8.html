@@ -354,13 +354,35 @@
 					<a href="#!" class="modal-close waves-effect btn-flat">ОК</a>
 				</div>
 			</div>
-			<div class="row">
-				<div id="pagination"></div>
-			</div>
 		</div>
 	</main>
-	<footer class="page-footer ">
-		<div class="row">
+	<footer class="page-footer">
+        <div class="row row_padding_top row_margin_none row_padding_bottom pagination_row_color">
+           
+            
+            
+            <div class="col mypagination" id="pagination"></div>
+             <div class="col right">
+             <span class="footer_text right">1 - 20 из 20</span>
+             
+             <div class="col  myselect">
+               
+
+
+					<select>
+      <option value="2">10</option>
+      <option value="3">25</option>
+      <option value="4">100</option>                                
+    </select>
+
+
+</div>
+
+				
+            <span class="footer_text right">Записей на странице:</span>
+                 </div>
+			</div>
+		<div class="row row_margin_none row_padding_top">
 			<div class="input-field col field_width">
 				<input readonly value="+155000" id="coming" type="text" class="sum_coming">
 				<label for="coming">Приход</label>

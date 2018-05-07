@@ -263,15 +263,35 @@
 					</tr>
 				</tbody>
 			</table>
-			<div class="row">
-				<div id="pagination"></div>
-			</div>
 		</div>
 	</main>
-	<footer class="page-footer">
-		<div class="row">
-		</div>
+	<footer class="page-footer ">
+        <div class="row row_padding_top row_padding_bottom pagination_row_color">
+           
+            
+            
+            <div class="col mypagination" id="pagination"></div>
+             <div class="col right">
+             <span class="footer_text right">1 - 20 из 20</span>
+             
+             <div class="col  myselect">
+               
 
+
+					<select>
+      <option value="2">10</option>
+      <option value="3">25</option>
+      <option value="4">100</option>                                
+    </select>
+
+
+</div>
+
+				
+            <span class="footer_text right">Записей на странице:</span>
+                 </div>
+			</div>
+		
 	</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
@@ -307,7 +327,7 @@
 			$('#pagination').materializePagination({
 				lastPage: 100,
 				firstPage: 1,
-				align: 'right',
+				align: 'center',
 				urlParameter: 'page',
 				useUrlParameter: true,
 				onClickCallback: function() {}

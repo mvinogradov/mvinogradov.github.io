@@ -147,6 +147,69 @@
 						<td>16.02.2017</td>
 						<td>16.02.2018</td>
 					</tr>
+                    <tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Активна</td>
+						<td>18</td>
+						<td>286</td>
+						<td>16.02.2018</td>
+						<td>16.02.2019</td>
+					</tr>
+                    <tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Активна</td>
+						<td>18</td>
+						<td>286</td>
+						<td>16.02.2018</td>
+						<td>16.02.2019</td>
+					</tr>
+                    <tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Активна</td>
+						<td>18</td>
+						<td>286</td>
+						<td>16.02.2018</td>
+						<td>16.02.2019</td>
+					</tr>
+                    <tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Активна</td>
+						<td>18</td>
+						<td>286</td>
+						<td>16.02.2018</td>
+						<td>16.02.2019</td>
+					</tr>
+                    <tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Активна</td>
+						<td>18</td>
+						<td>286</td>
+						<td>16.02.2018</td>
+						<td>16.02.2019</td>
+					</tr>
+                    <tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Активна</td>
+						<td>18</td>
+						<td>286</td>
+						<td>16.02.2018</td>
+						<td>16.02.2019</td>
+					</tr>
+                    <tr data-href="#">
+						<td class="circle_padding"><span class="circle_my circle_green"></span></td>
+						<td>№129 на 20 касс</td>
+						<td>Активна</td>
+						<td>18</td>
+						<td>286</td>
+						<td>16.02.2018</td>
+						<td>16.02.2019</td>
+					</tr>
 				</tbody>
 			</table>
 			<div id="modal_cash" class="modal modal-fixed-footer">
@@ -241,14 +304,34 @@
 					<a href="#!" class="modal-close waves-effect btn-flat">ОК</a>
 				</div>
 			</div>
-			<div class="row">
-				<div id="pagination"></div>
-			</div>
 		</div>
 	</main>
 	<footer class="page-footer ">
-		<div class="row">
-		</div>
+       <div class="row row_padding_top row_padding_bottom pagination_row_color">
+           
+            
+            
+            <div class="col mypagination" id="pagination"></div>
+             <div class="col right">
+             <span class="footer_text right">1 - 20 из 20</span>
+             
+             <div class="col myselect">
+               
+
+
+					<select>
+      <option value="2">10</option>
+      <option value="3">25</option>
+      <option value="4">100</option>                                
+    </select>
+
+
+</div>
+
+				
+            <span class="footer_text right">Записей на странице:</span>
+                 </div>
+			</div>
 	</footer>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
@@ -257,9 +340,9 @@
 	<script>
 		$(document).ready(function() {
 			$('#pagination').materializePagination({
-				lastPage: 0,
+				lastPage: 10,
 				firstPage: 1,
-				align: 'right',
+				align: 'center',
 				urlParameter: 'page',
 				useUrlParameter: true,
 				onClickCallback: function() {}
