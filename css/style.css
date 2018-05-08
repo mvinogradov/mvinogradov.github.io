@@ -314,7 +314,14 @@ main {
     }
 	.add_box {
     top: 0px !important;
+        
 }
+     .page-footer {
+     position: relative !important;
+    }
+    main {
+        padding-bottom: 20px;
+    }
 }
 
 
@@ -810,12 +817,7 @@ padding-top: 206px;
     .circle_padding {
         padding-left: none;
     }
-    .page-footer {
-     position: relative !important;
-    }
-    main {
-        padding-bottom: 20px;
-    }
+    
 
 
 }
