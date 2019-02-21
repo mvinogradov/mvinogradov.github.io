@@ -58,6 +58,7 @@
 				<div class="nav-wrapper">
 					<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 					<ul id="nav-mobile" class="right">
+                        <li><a class="btn-floating light-blue lighten-1 pulse href=#modal_message"><i class="material-icons">insert_comment</i></a></li>
 						<li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
 						<li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
 						<li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
@@ -169,7 +170,8 @@
 						<th class="hide-on-med-and-down">СНО</th>
 						<th class="hide-on-med-and-down">НДС:</th>
 						<th class="hide-on-med-and-down">10%</th>
-						<th class="hide-on-med-and-down">18%</th>
+						<th class="hide-on-med-and-down">20%
+                        </th>
 						<th class="hide-on-med-and-down">10/110%</th>
 						<th class="hide-on-med-and-down">18/118%</th>
 					</tr>
@@ -328,6 +330,32 @@
 
 				</tbody>
 			</table>
+            <div id="modal_message" class="modal modal-fixed-footer">
+				<div class="modal-content">
+					<div class="check_print"><br>
+						<br> ***********************************
+						<br> БЛА БАЛ БЛА <br> ***********************************
+						<br>
+						<br> ООО "МОСФЕТ"<br> ИНН 7746123451<br> N: 4<br> 19.09.17 16:57<br> СМЕНА: 1<br> ПРИХОД
+						<br> ОСН
+						<br> КАССИР Погонин Д.Г.<br> N KKT: 0000000001053903<br>
+						<br> ***********************************
+						<br>
+						<br> 18
+						<br> Ц. ЗА. ЕД. ПР: 20.00<br> КОЛИЧ. ПР: 1.0<br> НДС 18%<br> НДС ПР: 3.05<br> СУМ. ПР: 20.00<br>
+						<br> ***********************************
+						<br>
+						<br> ИТОГО: 20.00<br> НАЛИЧНЫМИ: 20.00<br> ЭЛЕКТРОННЫМИ: 0.00<br> АВАНС: 0.00<br> В КРЕДИТ: 0.00<br> ОБМЕН: 0.00<br> НДС 18%: 3.05<br> ЭЛ.АДР.ОТПРАВИТЕЛЯ: <a class="moz-txt-link-abbreviated" href="mailto:OFD@GARANT.RU">OFD@GARANT.RU</a><br> ЭЛ.АДР.ОТПРАВИТЕЛЯ: <a class="moz-txt-link-abbreviated" href="mailto:OFD@GARANT.RU">OFD@GARANT.RU</a><br> САЙТ ФНС: <a class="moz-txt-link-abbreviated" href="http://WWW.NALOG.RU">WWW.NALOG.RU</a><br> N ФД: 6<br> N ФН: 9999078900004589<br> ФП 1938576193<br>
+						<br> ***********************************
+						<br>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-close waves-effect btn-flat">Печать</a>
+					<a href="#!" class="modal-close waves-effect btn-flat">Сохранить</a>
+					<a href="#!" class="modal-close waves-effect btn-flat">ОК</a>
+				</div>
+			</div>
 			<div id="modal_chek" class="modal modal-fixed-footer">
 				<div class="modal-content">
 					<div class="check_print"><br>
@@ -482,6 +510,11 @@
 	</script>
 
 	<script>
+		$(document).ready(function() {
+			$('#modal_message').modal('open');;
+		});
+	</script>
+    <script>
 		$("tr").on("click", "td", function() {
 			$('.modal').modal('open');;
 		});

@@ -110,7 +110,7 @@
 						</div>
                         <div class="row row_margin_none">
 							<div class="input-field col s12">
-								<input title="г. Моска, Научный проезд, дом 19" id="adres"  disabled value="г. Моска, Научный проезд, дом 19" type="text" class="validate truncate">
+								<input title="г. Моска, Научный проезд, дом 19" id="adres" type="text" class="validate truncate">
 								<label for="adres">Местонахождение организации (место жительства ИП)</label>
 							</div>
 						</div>
@@ -159,6 +159,8 @@ $(document).ready(function($){
     
 // маска для инпута "номер телефона"	
     $("#phone-numb").inputmask("+7 (999)-999-99-99",{ showMaskOnHover: false, "onincomplete": function(){ $(this).addClass('invalid'); $(this).removeClass('valid'); }, "oncomplete": function(){ $(this).addClass('valid'); $(this).removeClass('invalid'); } });
+     // маска для инпута "адрес"	
+     $("#adres").inputmask("aaa, 9999999999");
 });
 		
 
