@@ -27,6 +27,12 @@
        url(../font/MaterialIcons-Regular.ttf) format('truetype');
 }
 
+.adres-field {
+    padding: 1rem 0 0 0;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+}
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;

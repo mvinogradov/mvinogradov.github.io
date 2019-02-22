@@ -1,173 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="img/favicon.png" type="image/x-icon">
-	<title>Экспресс касса</title>
-	<link rel="stylesheet" href="css/materialize.min.css">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Экспресс касса</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
-	<header>
-		<div class="top-navbar-fixed">
-		<nav class="nav-extended nav_color fixed_nav_width header_nav_h">
-			<div class="nav-wrapper">
-				<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul id="nav-mobile" class="right">
-					<li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
-					<li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
-					<li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
-					<li><a href="#" class="header-top__img-right" title="Выход"><i class="material-icons color_ico">exit_to_app</i></a></li>
-				</ul>
-			</div>
-		</nav>
-		</div>
-		<ul id="slide-out" class="side-nav fixed ">
-			<li>
-				<div class="user-view">
-					<a href="#!user">
-						<div class="logo"></div>
-					</a>
-				</div>
-			</li>
-			<li>
-				<a class="waves-effect menu_height disable_btn disable_btn" href="#!">
-					<div class="kass"></div>Кассы</a>
-			</li>
-			<li>
-				<a class="waves-effect menu_height disable_btn" href="#!">
-					<div class="check"></div>Чеки</a>
-			</li>
-			<li>
-				<a class="waves-effect menu_height disable_btn" href="#!">
-					<div class="licenz"></div>Лицензии</a>
-			</li>
-			<li>
-				<a class="waves-effect menu_height disable_btn" href="#!">
-					<div class="edoc"></div>Документы</a>
-			</li>
-             <li>
-				<a class="waves-effect menu_height disable_btn" href="#!">
-					<div class="analitics"></div>Аналитика</a>
-			</li>
-			<div class="l-side__string l-side__string_last">
-				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
-					<span class="without-fill">8 800 333 8888</span>
-				</div>
-				<div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
-					<a class="l-side__link" href="#">Оставить отзыв</a>
-				</div>
+    <header>
+        <div class="top-navbar-fixed">
+            <nav class="nav-extended nav_color fixed_nav_width header_nav_h">
+                <div class="nav-wrapper">
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a href="#" class="header-top__img-right" title="Обновить"><i class="material-icons color_ico">refresh</i></a></li>
+                        <li><a href="#" class="header-top__img-right" title="Ваши реквизиты"><i class="material-icons color_ico">account_box</i></a></li>
+                        <li><a href="#" class="header-top__img-right" title="Скачать локальную версию кабинета"><i class="material-icons color_ico">file_download</i></a></li>
+                        <li><a href="#" class="header-top__img-right" title="Выход"><i class="material-icons color_ico">exit_to_app</i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <ul id="slide-out" class="side-nav fixed ">
+            <li>
+                <div class="user-view">
+                    <a href="#!user">
+                        <div class="logo"></div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a class="waves-effect menu_height disable_btn disable_btn" href="#!">
+                    <div class="kass"></div>Кассы
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect menu_height disable_btn" href="#!">
+                    <div class="check"></div>Чеки
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect menu_height disable_btn" href="#!">
+                    <div class="licenz"></div>Лицензии
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect menu_height disable_btn" href="#!">
+                    <div class="edoc"></div>Документы
+                </a>
+            </li>
+            <li>
+                <a class="waves-effect menu_height disable_btn" href="#!">
+                    <div class="analitics"></div>Аналитика
+                </a>
+            </li>
+            <div class="l-side__string l-side__string_last">
+                <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+                    <span class="without-fill">8 800 333 8888</span>
+                </div>
+                <div class="l-side__string-text l-side__string-text_pad-bot l-side__string-text_middle">
+                    <a class="l-side__link" href="#">Оставить отзыв</a>
+                </div>
                 <div>
-				<img class="vsostave" src="img/vsostave.png">
-			</div>    
-			</div>
-		</ul>
-	</header>
-	<main>
-		<form action="">
-			<div class="row">
-				<div class="col s12">
-					<div class="card-panel white panel_margin card_panel_text">
-						<div class='row row_margin_none'>
-							<h1 class="form__title">Реквизиты</h1>
+                    <img class="vsostave" src="img/vsostave.png">
+                </div>
+            </div>
+        </ul>
+    </header>
+    <main>
+        <form action="">
+            <div class="row">
+                <div class="col s12">
+                    <div class="card-panel white panel_margin card_panel_text">
+                        <div class='row row_margin_none'>
+                            <h1 class="form__title">Реквизиты</h1>
 
-						</div>
-						<div class="row row_margin_none">
-							<div class="input-field col s12">
-								<input title="Общество с ограниченной ответственностью Продуктовый магазин" disabled value="Общество с ограниченной ответственностью Продуктовый магазин" id="orgname" type="text" class="validate truncate">
-								<label class="hide-on-small-only" for="orgname">Полное наименование организации (ФИО ИП)</label>
-								<label class="hide-on-med-and-up" for="orgname">Наименование (ФИО ИП)</label>
-							</div>
-						</div>
-
-						<div class="row row_margin_none">
-							<div class="input-field col s12 m6">
-								<input disabled value="7723378234" id="inn" type="text" class="validate ">
-								<label for="inn">ИНН</label>
-							</div>
-							<div class="input-field col s12 m6">
-								<input disabled value="0219312342394" id="ogrn" type="text" class="validate ">
-								<label for="ogrn">ОГРН</label>
-							</div>
-						</div>
-						<div class="row row_margin_none">
-							<div class="input-field col s12 m6">
-								<input required placeholder="Укажите ваш КПП" id="kpp" type="text" class="validate" minlength="9" maxlength="9">
-								<label data-error="должно быть 9 цифр" for="kpp">КПП</label>
-							</div>
-							<div class="input-field col s12 m6">
-								<input required placeholder="Укажите код инспекции ФНС" id="fns" type="text" class="validate" minlength="4" maxlength="4">
-								<label data-error="должно быть 4 цифры" for="fns">Код ФНС</label>
-							</div>
-						</div>
-						<div class="row row_margin_none">
-							<div class="input-field col s12">
-								<input disabled value="2CI002249067" id="id_edo" type="text" class="validate ">
-								<label for="id_edo">Идентификатор участника ЭДО</label>
-							</div>
-						</div>
+                        </div>
                         <div class="row row_margin_none">
-							<div class="input-field col s12">
-								<input title="г. Моска, Научный проезд, дом 19" id="adres" type="text" class="validate truncate">
-								<label for="adres">Местонахождение организации (место жительства ИП)</label>
-							</div>
-						</div>
-						<div class="row row_margin_none">
-							<div class="input-field col s12">
-								<input disabled value="Павлов Николай Геннадиевич" id="fio" type="text" class="validate ">
-								<label for="fio">ФИО владельца ЭП</label>
-							</div>
-						</div>
+                            <div class="input-field col s12">
+                                <input title="Общество с ограниченной ответственностью Продуктовый магазин" disabled value="Общество с ограниченной ответственностью Продуктовый магазин" id="orgname" type="text" class="validate truncate">
+                                <label class="hide-on-small-only" for="orgname">Полное наименование организации (ФИО ИП)</label>
+                                <label class="hide-on-med-and-up" for="orgname">Наименование (ФИО ИП)</label>
+                            </div>
+                        </div>
 
-						<div class="row row_margin_none">
-							<div class="input-field col s12 m6">
-								<input required placeholder="Укажите ваш номер" id="phone-numb" type="tel" class="validate">
-								<label required  for="phone-numb" data-error="Некорректный номер телефона">Мобильный телефон</label>
-							</div>
-							<div class="input-field col s12 m6">
-								<input required placeholder="Укажите ваш E-mail" required id="email" type="email" class="validate">
-								<label for="email" data-error="Некорректный E-mail">E-mail</label>
-							</div>
-						</div>
-						<div class="warning-block-position">
-							<div class="card-panel white panel_margin warning-block ">
-								<p>Вы&nbsp;не&nbsp;зарегистрированы как участник ЭДО. Чтобы подписать заявку на&nbsp;регистрацию нажмите &laquo;Продолжить&raquo;. После подачи заявки мы&nbsp;отправим вам реквизиты доступа на&nbsp;указанные почту и&nbsp;телефон.</p>
-							</div>
-							<div class="card-panel white panel_margin warning-block">
-								<p>Вы&nbsp;уже зарегистрированы как участник ЭДО. Нажмите &laquo;Продолжить&raquo; и&nbsp;мы&nbsp;отправим вам реквизиты доступа на&nbsp;указанные почту и&nbsp;телефон.</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col s12">
-								<a class="waves-effect waves-light btn-large btn_block form__button_margin">Продолжить</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</form>
-	</main>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
- 
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12 m6">
+                                <input disabled value="7723378234" id="inn" type="text" class="validate ">
+                                <label for="inn">ИНН</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input disabled value="0219312342394" id="ogrn" type="text" class="validate ">
+                                <label for="ogrn">ОГРН</label>
+                            </div>
+                        </div>
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12 m6">
+                                <input required placeholder="Укажите ваш КПП" id="kpp" type="text" class="validate" minlength="9" maxlength="9">
+                                <label data-error="должно быть 9 цифр" for="kpp">КПП</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input required placeholder="Укажите код инспекции ФНС" id="fns" type="text" class="validate" minlength="4" maxlength="4">
+                                <label data-error="должно быть 4 цифры" for="fns">Код ФНС</label>
+                            </div>
+                        </div>
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12">
+                                <input disabled value="2CI002249067" id="id_edo" type="text" class="validate ">
+                                <label for="id_edo">Идентификатор участника ЭДО</label>
+                            </div>
+                        </div>
+                        
+
+           <div class="row row_margin_none">
+                            <div class="input-field col s12">
+                                <input placeholder="Введите адрес" id="address" type="text" class="validate truncate">
+                                <label for="address">Местонахождение организации (место жительства ИП)</label>
+                            </div>
+                        </div>
+      <div class="adres-field">
+          
+           <div class="row row_margin_none">
+                            <div class="input-field col s12 m6">
+                                <input required placeholder="Код региона" id="code" type="text" class="validate" minlength="2" maxlength="2">
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input required placeholder="Район" id="area" type="text" maxlength="50">
+                            </div>
+                        </div>
+          
+           <div class="row row_margin_none">
+                            <div class="input-field col s12 m6">
+                                <input required placeholder="Город" id="city" type="text" maxlength="50">
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input required placeholder="Населенный пункт" id="settlement" type="text" maxlength="50">
+                            </div>
+                        </div>
+          
+          <div class="row row_margin_none">
+                            <div class="input-field col s12 m12">
+                                <input required placeholder="Улица" id="street" type="text" maxlength="50">
+                            </div>    
+                        </div>
+          <div class="row row_margin_none">
+              <div class="input-field col s12 m4">
+                                <input required placeholder="Дом" id="house" type="text" maxlength="20" class="validate">
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <input required placeholder="Корпус" id="block" type="text" maxlength="50">
+                            </div>
+                            <div class="input-field col s12 m4">
+                                <input required placeholder="Квартира" id="flat" type="text" maxlength="20" class="validate">
+                            </div>
+                        </div>
+          
+        </div>
+   
+                      
+             
+                            
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12">
+                                <input disabled value="Павлов Николай Геннадиевич" id="fio" type="text" class="validate ">
+                                <label for="fio">ФИО владельца ЭП</label>
+                            </div>
+                        </div>
+
+                        <div class="row row_margin_none">
+                            <div class="input-field col s12 m6">
+                                <input required placeholder="Укажите ваш номер" id="phone-numb" type="tel" class="validate">
+                                <label required for="phone-numb" data-error="Некорректный номер телефона">Мобильный телефон</label>
+                            </div>
+                            <div class="input-field col s12 m6">
+                                <input required placeholder="Укажите ваш E-mail" required id="email" type="email" class="validate">
+                                <label for="email" data-error="Некорректный E-mail">E-mail</label>
+                            </div>
+                        </div>
+                        <div class="warning-block-position">
+                            <div class="card-panel white panel_margin warning-block ">
+                                <p>Вы&nbsp;не&nbsp;зарегистрированы как участник ЭДО. Чтобы подписать заявку на&nbsp;регистрацию нажмите &laquo;Продолжить&raquo;. После подачи заявки мы&nbsp;отправим вам реквизиты доступа на&nbsp;указанные почту и&nbsp;телефон.</p>
+                            </div>
+                            <div class="card-panel white panel_margin warning-block">
+                                <p>Вы&nbsp;уже зарегистрированы как участник ЭДО. Нажмите &laquo;Продолжить&raquo; и&nbsp;мы&nbsp;отправим вам реквизиты доступа на&nbsp;указанные почту и&nbsp;телефон.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <a class="waves-effect waves-light btn-large btn_block form__button_margin">Продолжить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.11.1/dist/css/suggestions.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/suggestions-jquery@18.11.1/dist/js/jquery.suggestions.min.js"></script>
     <script>
-$(document).ready(function($){
-    
-// маска для инпута "номер телефона"	
-    $("#phone-numb").inputmask("+7 (999)-999-99-99",{ showMaskOnHover: false, "onincomplete": function(){ $(this).addClass('invalid'); $(this).removeClass('valid'); }, "oncomplete": function(){ $(this).addClass('valid'); $(this).removeClass('invalid'); } });
-     // маска для инпута "адрес"	
-     $("#adres").inputmask("aaa, 9999999999");
-});
-		
+        $(document).ready(function($) {
+            // маска для инпута "номер телефона"	
+            $("#phone-numb").inputmask("+7 (999)-999-99-99", {
+                showMaskOnHover: false,
+                "onincomplete": function() {
+                    $(this).addClass('invalid');
+                    $(this).removeClass('valid');
+                },
+                "oncomplete": function() {
+                    $(this).addClass('valid');
+                    $(this).removeClass('invalid');
+                }
+            });
+        });
+        
 
-		
-</script>
+    </script>
 
-    
+
 </body>
 
 </html>
